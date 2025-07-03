@@ -7,6 +7,7 @@ import {
   Settings,
   HardHat,
   Wrench,
+  Droplet,
 } from "lucide-react";
 
 const SolutionsShowcase = () => {
@@ -34,7 +35,7 @@ const SolutionsShowcase = () => {
     },
     {
       id: 3,
-      icon: <Factory className="w-12 h-12 text-blue-600 mb-4" />,
+      icon: <Droplet className="w-12 h-12 text-blue-600 mb-4" />,
       title: "Liquid Filling Machine",
       description:
         "Our Liquid Filling Machine delivers precise, efficient, and contamination-free filling for a wide range of liquid products. Designed for speed...",
@@ -43,10 +44,10 @@ const SolutionsShowcase = () => {
     },
     {
       id: 4,
-      icon: <HardHat className="w-12 h-12 text-blue-600 mb-4" />,
+      icon: <Factory className="w-12 h-12 text-blue-600 mb-4" />,
       title: "Folding Machine",
       description:
-        "Customised Drawings, Designs and Consultation to fulfill your overall project requirements. Our turnkey ...",
+        "Our Folding Machine offers a fast and accurate solution for folding materials with consistent precision. Built for high-performance ...",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2024/9/454176825/FP/JE/AC/84056891/cap-edge-folding-machine-250x250.jpg",
     },
@@ -55,7 +56,7 @@ const SolutionsShowcase = () => {
       icon: <Wrench className="w-12 h-12 text-blue-600 mb-4" />,
       title: "Packaging Machine",
       description:
-        "Original, High Quality Spare Parts, easily available with timely delivery of requirements. The constant ...",
+        "Our Packaging Machine streamlines the packing process with speed, precision, and reliability. Designed to handle various product types...",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2024/9/454178113/WK/UW/PV/84056891/single-phase-pouch-packing-machine-250x250.jpg",
     },
