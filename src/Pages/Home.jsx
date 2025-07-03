@@ -46,7 +46,7 @@ const SonaWebsite = () => {
       careers: "Careers",
       blogs: "Blogs",
       contactUs: "Contact Us",
-      downloadCatalogue: "Download Catalogue",
+      downloadCatalogue: "Download Brochure",
       discoverPower: "Discover the Power of",
       cuttingEdge: "CUTTING-EDGE TECHNOLOGY",
       riceMilling: "in our Advanced Rice Milling Process",
@@ -102,7 +102,7 @@ const SonaWebsite = () => {
           <div className="flex items-center space-x-4 mb-2 sm:mb-0">
             <span className="flex items-center">
               <Phone className="w-4 h-4 mr-1" />
-              Call Us: +91-9599-00-2201
+              Call Us: +91-97371-74655
             </span>
           </div>
 
@@ -170,16 +170,16 @@ const SonaWebsite = () => {
               <div className="relative group">
                 <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
                   {currentTranslation.aboutUs}{" "}
-                  <ChevronDown className="w-4 h-4 ml-1" />
+                  {/* <ChevronDown className="w-4 h-4 ml-1" /> */}
                 </button>
               </div>
               <div className="relative group">
                 <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
                   {currentTranslation.products}{" "}
-                  <ChevronDown className="w-4 h-4 ml-1" />
+                  {/* <ChevronDown className="w-4 h-4 ml-1" /> */}
                 </button>
               </div>
-              <div className="relative group">
+              {/* <div className="relative group">
                 <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
                   {currentTranslation.investors}{" "}
                   <ChevronDown className="w-4 h-4 ml-1" />
@@ -202,6 +202,12 @@ const SonaWebsite = () => {
                 className="text-gray-700 hover:text-blue-600 transition-colors"
               >
                 {currentTranslation.blogs}
+              </a> */}
+              <a
+                href="#"
+                className="text-gray-700 hover:text-blue-600 transition-colors"
+              >
+                Gallery
               </a>
               <a
                 href="#"
@@ -252,7 +258,7 @@ const SonaWebsite = () => {
               >
                 {currentTranslation.products}
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="block text-gray-700 hover:text-blue-600 transition-colors"
               >
@@ -263,8 +269,8 @@ const SonaWebsite = () => {
                 className="block text-gray-700 hover:text-blue-600 transition-colors"
               >
                 {currentTranslation.newsEvents}
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="#"
                 className="block text-gray-700 hover:text-blue-600 transition-colors"
               >
@@ -275,6 +281,9 @@ const SonaWebsite = () => {
                 className="block text-gray-700 hover:text-blue-600 transition-colors"
               >
                 {currentTranslation.blogs}
+              </a> */}
+              <a href="#" className="block text-gray-700 transition-colors">
+                Gallery
               </a>
               <a
                 href="#"
