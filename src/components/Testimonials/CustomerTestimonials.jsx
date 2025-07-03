@@ -8,28 +8,28 @@ const CustomerTestimonials = () => {
   const testimonials = [
     {
       id: 1,
-      text: "I thank Sona Machinery Team for making our plant operations successful and helping us meet the capacity output desired in Grain Handling System – Unloading & Milling Sections. We look forward to working with Sona Machinery in our future projects as we now know whom to entrust this responsibility to.",
+      text: "I thank TM Tech Make Machinery Team for making our plant operations successful and helping us meet the capacity output desired in Grain Handling System – Unloading & Milling Sections. We look forward to working with TM Tech Make Machinery in our future projects as we now know whom to entrust this responsibility to.",
       author: "B. Srinivas",
       position: "Chief Procurement Officer",
       company: "Balrampur Chini Mills",
     },
     {
       id: 2,
-      text: "Sona Machinery has consistently delivered exceptional quality equipment and outstanding service. Their expertise in grain handling systems has been instrumental in optimizing our production efficiency and reducing operational costs.",
+      text: "TM Tech Make Machinery has consistently delivered exceptional quality equipment and outstanding service. Their expertise in grain handling systems has been instrumental in optimizing our production efficiency and reducing operational costs.",
       author: "R. Kumar",
       position: "Plant Manager",
       company: "ABC Industries",
     },
     {
       id: 3,
-      text: "The professional approach and technical expertise of Sona Machinery team exceeded our expectations. Their grain handling solutions have significantly improved our plant's productivity and reliability.",
+      text: "The professional approach and technical expertise of TM Tech Make Machinery team exceeded our expectations. Their grain handling solutions have significantly improved our plant's productivity and reliability.",
       author: "S. Sharma",
       position: "Operations Director",
       company: "XYZ Manufacturing",
     },
     {
       id: 4,
-      text: "Working with Sona Machinery has been a game-changer for our operations. Their innovative solutions and commitment to quality have helped us achieve remarkable improvements in our grain processing capabilities.",
+      text: "Working with TM Tech Make Machinery has been a game-changer for our operations. Their innovative solutions and commitment to quality have helped us achieve remarkable improvements in our grain processing capabilities.",
       author: "M. Patel",
       position: "Technical Head",
       company: "Global Grain Solutions",

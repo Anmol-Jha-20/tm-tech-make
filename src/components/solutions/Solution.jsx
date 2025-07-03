@@ -19,7 +19,7 @@ const SolutionsShowcase = () => {
       icon: <Factory className="w-12 h-12 text-blue-600 mb-4" />,
       title: "Cap Making Machine",
       description:
-        "Innovative Technology Complete Project Rice Mill Solutions for Modern Millers. Sona Machinery has been ...",
+        "Our advanced Cap Making Machine offers a reliable, high-speed solution for manufacturing caps with precision and efficiency...",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2024/9/454177302/QS/KW/OQ/84056891/bottle-cap-slitting-machine-250x250.jpg",
     },
@@ -28,7 +28,7 @@ const SolutionsShowcase = () => {
       icon: <Factory className="w-12 h-12 text-blue-600 mb-4" />,
       title: "Filling Machine",
       description:
-        "Turnkey Project Solution for Grain Based Distillery - in Grain Unloading & Milling Section. We offer EPC ...",
+        "Our Filling Machine provides a fast, accurate, and hygienic solution for filling liquids or semi-liquids into containers...",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2024/9/454178356/EW/OM/US/84056891/bpm-mineral-water-filling-capping-machine-250x250.jpeg",
     },
@@ -37,7 +37,7 @@ const SolutionsShowcase = () => {
       icon: <Factory className="w-12 h-12 text-blue-600 mb-4" />,
       title: "Liquid Filling Machine",
       description:
-        "Post-Harvest Processing Machinery for Cleaning, Destoning, Grading & Material Handling. The top ...",
+        "Our Liquid Filling Machine delivers precise, efficient, and contamination-free filling for a wide range of liquid products. Designed for speed...",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2024/6/428076351/UD/VP/DI/84056891/20231206-58266dce903d0a7037fb-250x250.png",
     },

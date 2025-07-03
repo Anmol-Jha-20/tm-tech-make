@@ -55,7 +55,7 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Turnkey Rice Mills Setup
+                    Packaging Machine
                   </a>
                 </li>
                 <li>
@@ -63,7 +63,7 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Grain Processing Setup
+                    Cap Folding And Slitting Machnie
                   </a>
                 </li>
                 <li>
@@ -71,7 +71,7 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Grain Based Distillery Solutions
+                    Wad Inserting Machine
                   </a>
                 </li>
                 <li>
@@ -79,7 +79,7 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Bulk Material Handling
+                    Slitting Machine
                   </a>
                 </li>
                 <li>
@@ -87,9 +87,25 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Engineering and Designing Consultation
+                    Liquid Filling Machine
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
+                  >
+                    Filling Machine
+                  </a>
+                </li>
+                {/* <li>
+                  <a
+                    href="#"
+                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
+                  >
+                    Liquid Filling Machine
+                  </a>
+                </li> */}
               </ul>
             </div>
 
@@ -106,20 +122,35 @@ export default function Footer() {
                     size={20}
                   />
                   <div className="text-gray-700">
-                    <p>F-16 & C-1, Sector A-3, Tronica City, Loni</p>
+                    {/* <p>F-16 & C-1, Sector A-3, Tronica City, Loni</p>
                     <p>Ghaziabad, U.P.</p>
-                    <p>India 201102</p>
+                    <p>India 201102</p> */}
+                    <p>
+                      0,Shed No. 01,Arihant Estate, Kanbha Road, Nr.Ring Road
+                      Circle,Nr.Nalanda Estate
+                    </p>
+                    <p> Odhav,Ahmedabad, Ahmedabad- 382415</p>{" "}
+                    <p>Gujarat, India</p>
                   </div>
                 </div>
 
                 {/* Email */}
-                <div className="flex items-center space-x-3">
+                {/* <div className="flex items-center space-x-3">
                   <Mail className="text-gray-600 flex-shrink-0" size={20} />
                   <a
                     href="mailto:inquiry@sonamachinery.com"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
                     inquiry@sonamachinery.com
+                  </a>
+                </div> */}
+                <div className="flex items-center space-x-3">
+                  <Phone className="text-gray-600 flex-shrink-0" size={20} />
+                  <a
+                    href="tel:+9197371 74655"
+                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
+                  >
+                    +91 97371 74655
                   </a>
                 </div>
 
@@ -146,7 +177,7 @@ export default function Footer() {
               >
                 Terms And Conditions
               </a>
-              | © 2024 Sona Machinery Ltd. All rights reserved
+              | © 2024 TM TECH MAKE Ltd. All rights reserved
             </p>
           </div>
         </div>
