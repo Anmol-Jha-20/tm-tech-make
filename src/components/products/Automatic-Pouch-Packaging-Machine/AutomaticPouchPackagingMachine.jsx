@@ -20,16 +20,16 @@ import {
   IndianRupee,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import SingleHeadROPPCappingMachineImage from "../../../assets/SingleHeadROPPCappingMachine.jpeg";
+import AutomaticPouchPackagingMachineImage from "../../../assets/PouchPackagingMachineOne.jpeg";
 
-const SingleHeadROPPCappingMachine = () => {
+const AutomaticPouchPackagingMachine = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [activeTab, setActiveTab] = useState("overview");
   const [isImageZoomed, setIsImageZoomed] = useState(false);
 
-  const productImages = [SingleHeadROPPCappingMachineImage];
+  const productImages = [AutomaticPouchPackagingMachineImage];
 
   const specifications = [
     { label: "Model", value: "TM-PP-500" },
@@ -213,9 +213,9 @@ const SingleHeadROPPCappingMachine = () => {
           <div className="space-y-6">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-2">
-                Single Head ROPP Capping Machine
+                Automatic Pouch Packaging Machine
               </h1>
-              <p className="text-xl text-gray-600 mb-4">Model: EC-ROPP-100</p>
+              <p className="text-xl text-gray-600 mb-4">Model: KGN-VFFS-100P</p>
 
               <div className="flex items-center space-x-4 mb-6">
                 {/* <div className="flex items-center space-x-1">
@@ -237,11 +237,11 @@ const SingleHeadROPPCappingMachine = () => {
                     <p className="text-sm text-gray-600">Starting Price</p>
                     <p className="text-3xl font-bold text-green-600 flex items-center">
                       <IndianRupee className="w-6 h-6 mr-1" />
-                      2,80,000
+                      1,35,000
                     </p>
-                    <p className="text-sm text-gray-500">
+                    {/* <p className="text-sm text-gray-500">
                       *Price may vary based on specifications
-                    </p>
+                    </p> */}
                   </div>
                   {/* <div className="text-right">
                     <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -254,16 +254,15 @@ const SingleHeadROPPCappingMachine = () => {
 
             <div className="prose prose-gray max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed">
-                The Single Head ROPP Capping Machine is an automatic
-                rotary-based machine designed for sealing aluminum ROPP caps on
-                glass or PET bottles. It includes a rotating star plate or
-                indexing turret (in blue) for bottle positioning; a cap feeding
-                chute and pick-off mechanism for placing caps onto bottle necks;
-                a servo- or pressure-based capping head to roll and seal the
-                aluminum cap precisely; and a stainless steel frame with a
-                conveyor for automatic infeed and outfeed of bottles. This
-                machine ensures high-speed, accurate, and tamper-evident capping
-                with minimal manual intervention.
+                This is a Fully Automatic Vertical Form Fill Seal (VFFS) Pouch
+                Packing Machine, model KGN-VFFS-100P, designed for efficient and
+                precise packaging of free-flowing granules, powders, and small
+                food items such as snacks, spices, tea, coffee, and detergents.
+                The machine forms pouches from laminated film rolls, fills them
+                with the desired product using a cup or auger filler system, and
+                seals them using a center seal mechanism. It features an
+                easy-to-operate control panel with temperature and speed
+                controls, ensuring consistent performance and minimal wastage.
               </p>
             </div>
 
@@ -446,4 +445,4 @@ const SingleHeadROPPCappingMachine = () => {
   );
 };
 
-export default SingleHeadROPPCappingMachine;
+export default AutomaticPouchPackagingMachine;

@@ -20,16 +20,16 @@ import {
   IndianRupee,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import SingleHeadROPPCappingMachineImage from "../../../assets/SingleHeadROPPCappingMachine.jpeg";
+import CapSlittingMachineImage from "../../../assets/CapSlittingMachine.jpeg";
 
-const SingleHeadROPPCappingMachine = () => {
+const CapSlittingMachine = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [activeTab, setActiveTab] = useState("overview");
   const [isImageZoomed, setIsImageZoomed] = useState(false);
 
-  const productImages = [SingleHeadROPPCappingMachineImage];
+  const productImages = [CapSlittingMachineImage];
 
   const specifications = [
     { label: "Model", value: "TM-PP-500" },
@@ -213,9 +213,9 @@ const SingleHeadROPPCappingMachine = () => {
           <div className="space-y-6">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-2">
-                Single Head ROPP Capping Machine
+                Cap Slitting Machine
               </h1>
-              <p className="text-xl text-gray-600 mb-4">Model: EC-ROPP-100</p>
+              <p className="text-xl text-gray-600 mb-4">Model: KGN-CSM-100</p>
 
               <div className="flex items-center space-x-4 mb-6">
                 {/* <div className="flex items-center space-x-1">
@@ -237,7 +237,7 @@ const SingleHeadROPPCappingMachine = () => {
                     <p className="text-sm text-gray-600">Starting Price</p>
                     <p className="text-3xl font-bold text-green-600 flex items-center">
                       <IndianRupee className="w-6 h-6 mr-1" />
-                      2,80,000
+                      1,10,000
                     </p>
                     <p className="text-sm text-gray-500">
                       *Price may vary based on specifications
@@ -254,16 +254,18 @@ const SingleHeadROPPCappingMachine = () => {
 
             <div className="prose prose-gray max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed">
-                The Single Head ROPP Capping Machine is an automatic
-                rotary-based machine designed for sealing aluminum ROPP caps on
-                glass or PET bottles. It includes a rotating star plate or
-                indexing turret (in blue) for bottle positioning; a cap feeding
-                chute and pick-off mechanism for placing caps onto bottle necks;
-                a servo- or pressure-based capping head to roll and seal the
-                aluminum cap precisely; and a stainless steel frame with a
-                conveyor for automatic infeed and outfeed of bottles. This
-                machine ensures high-speed, accurate, and tamper-evident capping
-                with minimal manual intervention.
+                The KGN-CSM-100 is a compact and efficient semi-automatic cap
+                slitting machine designed for precise and uniform slitting of
+                plastic caps. Ideal for medium-scale bottle cap production units
+                and packaging operations, it features a stainless steel body for
+                durability and hygiene, along with semi-automatic operation
+                equipped with safety controls. The machine is fitted with
+                high-precision slitting blades and is suitable for various cap
+                sizes, typically ranging from 28mm to 46mm. It offers adjustable
+                slitting depth and blade positioning to accommodate different
+                production needs. Additional features include an emergency stop
+                button for enhanced operator safety and a compact footprint that
+                makes it easy to install and operate in limited space.
               </p>
             </div>
 
@@ -446,4 +448,4 @@ const SingleHeadROPPCappingMachine = () => {
   );
 };
 
-export default SingleHeadROPPCappingMachine;
+export default CapSlittingMachine;

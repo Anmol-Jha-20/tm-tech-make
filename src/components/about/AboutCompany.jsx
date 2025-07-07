@@ -2,6 +2,7 @@ import React from "react";
 import { ChevronRight } from "lucide-react";
 import Hero from "../../assets/Hero.png";
 import Hero2 from "../../assets/Hero2.png";
+import { Link } from "react-router-dom";
 
 export default function AboutCompany() {
   return (
@@ -56,15 +57,17 @@ export default function AboutCompany() {
 
               {/* More About Us Link */}
               <div className="pt-4">
-                <button
-                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200 group"
-                  aria-label="Learn more about Sona Machinery"
-                >
-                  <span className="underline decoration-2 underline-offset-4 hover:decoration-blue-800">
-                    More About Us
-                  </span>
-                  <ChevronRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-200" />
-                </button>
+                <Link to={"/about-us"}>
+                  <button
+                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200 group cursor-pointer"
+                    aria-label="Learn more about Sona Machinery"
+                  >
+                    <span className="underline decoration-2 underline-offset-4 hover:decoration-blue-800">
+                      More About Us
+                    </span>
+                    <ChevronRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-200" />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -13,7 +13,7 @@ import CapSlittingAndFoldingMachine from "../../assets/CapSlittingAndFoldingMach
 import CapSlittingMachine from "../../assets/CapSlittingMachine.jpeg";
 import OilCapSlittingAndFoldingMachine from "../../assets/OilCapSlittingAndFoldingMachine.jpeg";
 import PouchPackagingMachine from "../../assets/PouchPackagingMachine.jpeg";
-import PouchPackagingMachineOne from "../../assets/PouchPackagingMachineOne.jpeg";
+import AutomaticPouchPackagingMachine from "../../assets/PouchPackagingMachineOne.jpeg";
 import SingleHeadROPPCappingMachine from "../../assets/SingleHeadROPPCappingMachine.jpeg";
 import { useNavigate } from "react-router-dom";
 
@@ -48,7 +48,7 @@ const SolutionsShowcase = () => {
       description:
         "Our Liquid Filling Machine delivers precise, efficient, and contamination-free filling for a wide range of liquid products. Designed for speed...",
       image: OilCapSlittingAndFoldingMachine,
-      link: "/pouch-packaging-machine",
+      link: "/oil-cap-slitting-and-folding-machine",
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ const SolutionsShowcase = () => {
       description:
         "Our Folding Machine offers a fast and accurate solution for folding materials with consistent precision. Built for high-performance ...",
       image: CapSlittingMachine,
-      link: "/pouch-packaging-machine",
+      link: "/cap-slitting-machine",
     },
     {
       id: 5,
@@ -66,7 +66,16 @@ const SolutionsShowcase = () => {
       description:
         "Our Packaging Machine streamlines the packing process with speed, precision, and reliability. Designed to handle various product types...",
       image: CapSlittingAndFoldingMachine,
-      link: "/pouch-packaging-machine",
+      link: "/cap-slitting-and-folding-machine",
+    },
+    {
+      id: 6,
+      icon: <Wrench className="w-12 h-12 text-blue-600 mb-4" />,
+      title: "Automatic Pouch Packaging Machine",
+      description:
+        "This is a Fully Automatic Vertical Form Fill Seal (VFFS) Pouch Packing Machine, model KGN-VFFS-100P, designed for efficient...",
+      image: AutomaticPouchPackagingMachine,
+      link: "/automatic-pouch-packaging-machine",
     },
   ];
 
@@ -207,7 +216,7 @@ const SolutionsShowcase = () => {
 
                   <button
                     onClick={() => navigate(solution.link)}
-                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300 group/btn"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300 group/btn cursor-pointer"
                   >
                     Read More
                     <ChevronRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform duration-300" />

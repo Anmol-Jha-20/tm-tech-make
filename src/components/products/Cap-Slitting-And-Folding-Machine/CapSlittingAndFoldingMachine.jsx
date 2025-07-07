@@ -20,16 +20,16 @@ import {
   IndianRupee,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import SingleHeadROPPCappingMachineImage from "../../../assets/SingleHeadROPPCappingMachine.jpeg";
+import CapSlittingAndFoldingMachineImage from "../../../assets/CapSlittingAndFoldingMachine.jpeg";
 
-const SingleHeadROPPCappingMachine = () => {
+const CapSlittingAndFoldingMachine = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [activeTab, setActiveTab] = useState("overview");
   const [isImageZoomed, setIsImageZoomed] = useState(false);
 
-  const productImages = [SingleHeadROPPCappingMachineImage];
+  const productImages = [CapSlittingAndFoldingMachineImage];
 
   const specifications = [
     { label: "Model", value: "TM-PP-500" },
@@ -213,9 +213,9 @@ const SingleHeadROPPCappingMachine = () => {
           <div className="space-y-6">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-2">
-                Single Head ROPP Capping Machine
+                Cap Slitting And Folding Machine
               </h1>
-              <p className="text-xl text-gray-600 mb-4">Model: EC-ROPP-100</p>
+              <p className="text-xl text-gray-600 mb-4">Model: KGN-CSF-120</p>
 
               <div className="flex items-center space-x-4 mb-6">
                 {/* <div className="flex items-center space-x-1">
@@ -237,11 +237,11 @@ const SingleHeadROPPCappingMachine = () => {
                     <p className="text-sm text-gray-600">Starting Price</p>
                     <p className="text-3xl font-bold text-green-600 flex items-center">
                       <IndianRupee className="w-6 h-6 mr-1" />
-                      2,80,000
+                      6,10,000
                     </p>
-                    <p className="text-sm text-gray-500">
+                    {/* <p className="text-sm text-gray-500">
                       *Price may vary based on specifications
-                    </p>
+                    </p> */}
                   </div>
                   {/* <div className="text-right">
                     <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -254,16 +254,19 @@ const SingleHeadROPPCappingMachine = () => {
 
             <div className="prose prose-gray max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed">
-                The Single Head ROPP Capping Machine is an automatic
-                rotary-based machine designed for sealing aluminum ROPP caps on
-                glass or PET bottles. It includes a rotating star plate or
-                indexing turret (in blue) for bottle positioning; a cap feeding
-                chute and pick-off mechanism for placing caps onto bottle necks;
-                a servo- or pressure-based capping head to roll and seal the
-                aluminum cap precisely; and a stainless steel frame with a
-                conveyor for automatic infeed and outfeed of bottles. This
-                machine ensures high-speed, accurate, and tamper-evident capping
-                with minimal manual intervention.
+                The KGN-CSF-120 is an industrial-grade cap slitting and folding
+                machine engineered for high-speed, precision processing of
+                plastic bottle caps. Widely used in the production of
+                tamper-evident closures for PET bottles, this machine is built
+                to meet the demands of continuous, high-volume manufacturing. It
+                features a stainless steel rotating drum for durability, a PLC
+                control panel with digital temperature and timer displays, and a
+                cap holding and indexing system that ensures accurate and
+                consistent cutting. The machine also includes a pneumatic or
+                mechanical folding mechanism for reliable skirt formation, a
+                safety cover for operator protection, and castor wheels for easy
+                mobility. An automatic feeding and discharging system further
+                enhances operational efficiency and throughput.
               </p>
             </div>
 
@@ -446,4 +449,4 @@ const SingleHeadROPPCappingMachine = () => {
   );
 };
 
-export default SingleHeadROPPCappingMachine;
+export default CapSlittingAndFoldingMachine;

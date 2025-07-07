@@ -1,7 +1,15 @@
 import React from "react";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Footer() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location.pathname]);
   return (
     <div className="bg-white">
       {/* Fixed WhatsApp Button */}
@@ -51,44 +59,52 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to={"/pouch-packaging-machine"}
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
                     Pouch Packaging Machine
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to={"/single-head-ropp-capping-machine"}
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
                     Single Head ROPP Capping Machine
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to={"/oil-cap-slitting-and-folding-machine"}
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
                     Oil Cap Slitting And Folding Machine
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to={"/cap-slitting-machine"}
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
                     Cap Slitting Machine
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to={"/cap-slitting-and-folding-machine"}
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
                     Cap Slitting And Folding Machine
-                  </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"/automatic-pouch-packaging-machine"}
+                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
+                  >
+                    Automatic Pouch Packaging Machine
+                  </Link>
                 </li>
                 {/* <li>
                   <a

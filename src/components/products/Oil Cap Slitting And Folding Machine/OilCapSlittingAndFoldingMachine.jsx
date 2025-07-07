@@ -20,16 +20,16 @@ import {
   IndianRupee,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import SingleHeadROPPCappingMachineImage from "../../../assets/SingleHeadROPPCappingMachine.jpeg";
+import OilCapSlittingAndFoldingMachineImage from "../../../assets/OilCapSlittingAndFoldingMachine.jpeg";
 
-const SingleHeadROPPCappingMachine = () => {
+const OilCapSlittingAndFoldingMachine = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [activeTab, setActiveTab] = useState("overview");
   const [isImageZoomed, setIsImageZoomed] = useState(false);
 
-  const productImages = [SingleHeadROPPCappingMachineImage];
+  const productImages = [OilCapSlittingAndFoldingMachineImage];
 
   const specifications = [
     { label: "Model", value: "TM-PP-500" },
@@ -119,7 +119,7 @@ const SingleHeadROPPCappingMachine = () => {
     const structuredData = {
       "@context": "https://schema.org/",
       "@type": "Product",
-      name: "Pouch Packaging Machine TM-PP-500",
+      name: "Oil Cap Slitting And Folding Machine",
       manufacturer: {
         "@type": "Organization",
         name: "TM Tech Make",
@@ -213,9 +213,9 @@ const SingleHeadROPPCappingMachine = () => {
           <div className="space-y-6">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-2">
-                Single Head ROPP Capping Machine
+                Oil Cap Slitting And Folding Machine
               </h1>
-              <p className="text-xl text-gray-600 mb-4">Model: EC-ROPP-100</p>
+              <p className="text-xl text-gray-600 mb-4">Model: KGN-CFS-60</p>
 
               <div className="flex items-center space-x-4 mb-6">
                 {/* <div className="flex items-center space-x-1">
@@ -237,7 +237,7 @@ const SingleHeadROPPCappingMachine = () => {
                     <p className="text-sm text-gray-600">Starting Price</p>
                     <p className="text-3xl font-bold text-green-600 flex items-center">
                       <IndianRupee className="w-6 h-6 mr-1" />
-                      2,80,000
+                      5,90,000
                     </p>
                     <p className="text-sm text-gray-500">
                       *Price may vary based on specifications
@@ -254,16 +254,12 @@ const SingleHeadROPPCappingMachine = () => {
 
             <div className="prose prose-gray max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed">
-                The Single Head ROPP Capping Machine is an automatic
-                rotary-based machine designed for sealing aluminum ROPP caps on
-                glass or PET bottles. It includes a rotating star plate or
-                indexing turret (in blue) for bottle positioning; a cap feeding
-                chute and pick-off mechanism for placing caps onto bottle necks;
-                a servo- or pressure-based capping head to roll and seal the
-                aluminum cap precisely; and a stainless steel frame with a
-                conveyor for automatic infeed and outfeed of bottles. This
-                machine ensures high-speed, accurate, and tamper-evident capping
-                with minimal manual intervention.
+                The Oil Cap Slitting & Folding Machine is a precision-engineered
+                system that performs two critical functions on plain aluminum
+                caps: <br /> <b>Slitting</b> – Cuts tamper-evident slits into
+                the sidewall of the caps. <br /> <b>Folding (Skirting)</b> –
+                Rolls or folds the bottom edge of the cap skirt to form a proper
+                grip zone for later capping.
               </p>
             </div>
 
@@ -446,4 +442,4 @@ const SingleHeadROPPCappingMachine = () => {
   );
 };
 
-export default SingleHeadROPPCappingMachine;
+export default OilCapSlittingAndFoldingMachine;
