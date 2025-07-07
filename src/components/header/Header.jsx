@@ -174,12 +174,12 @@ function Header() {
                 </Link>
               </div>
               <div className="relative group">
-                <HashLink smooth to="/#product">
+                <Link to="/our-products">
                   <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center cursor-pointer">
                     {currentTranslation.products}{" "}
                     {/* <ChevronDown className="w-4 h-4 ml-1" /> */}
                   </button>
-                </HashLink>
+                </Link>
               </div>
               {/* <div className="relative group">
                 <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
@@ -256,14 +256,13 @@ function Header() {
               >
                 {currentTranslation.aboutUs}
               </Link>
-              <HashLink
-                smooth
-                to="/#product"
+              <Link
+                to="/our-products"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-gray-700 hover:text-blue-600 transition-colors"
               >
                 {currentTranslation.products}
-              </HashLink>
+              </Link>
               {/* <a
                 href="#"
                 className="block text-gray-700 hover:text-blue-600 transition-colors"

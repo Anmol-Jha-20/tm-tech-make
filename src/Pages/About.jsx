@@ -235,12 +235,12 @@ export default function AboutUs() {
                 equipment.
               </p>
               <div className="flex flex-wrap gap-4">
-                <HashLink smooth to="/#product">
+                <Link to="/our-products">
                   <button className="group flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 cursor-pointer">
                     Our Products
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </button>
-                </HashLink>
+                </Link>
                 {/* <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-300">
                   Our Products
                 </button> */}

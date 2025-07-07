@@ -13,6 +13,7 @@ import OilCapSlittingAndFoldingMachine from "./components/products/Oil Cap Slitt
 import CapSlittingMachine from "./components/products/Cap Slitting Machine/CapSlittingMachine.jsx";
 import CapSlittingAndFoldingMachine from "./components/products/Cap-Slitting-And-Folding-Machine/CapSlittingAndFoldingMachine.jsx";
 import AutomaticPouchPackagingMachine from "./components/products/Automatic-Pouch-Packaging-Machine/AutomaticPouchPackagingMachine.jsx";
+import ProductsPage from "./Pages/OurProducts.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUs />,
+      },
+      {
+        path: "/our-products",
+        element: <ProductsPage />,
       },
       {
         path: "/gallery",
