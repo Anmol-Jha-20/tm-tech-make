@@ -1,11 +1,18 @@
 import "./App.css";
-import SonaWebsite from "./Pages/Home.jsx";
+import Footer from "./components/footer/Footer.jsx";
+import Header from "./components/header/Header.jsx";
+// import SonaWebsite from "./Pages/Home.jsx";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <SonaWebsite />
-    </>
+    <div className="min-h-screen bg-white">
+      <Header />
+
+      <Outlet />
+
+      <Footer />
+    </div>
   );
 }
 

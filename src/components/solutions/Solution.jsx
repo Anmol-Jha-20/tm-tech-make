@@ -9,56 +9,64 @@ import {
   Wrench,
   Droplet,
 } from "lucide-react";
+import CapSlittingAndFoldingMachine from "../../assets/CapSlittingAndFoldingMachine.jpeg";
+import CapSlittingMachine from "../../assets/CapSlittingMachine.jpeg";
+import OilCapSlittingAndFoldingMachine from "../../assets/OilCapSlittingAndFoldingMachine.jpeg";
+import PouchPackagingMachine from "../../assets/PouchPackagingMachine.jpeg";
+import PouchPackagingMachineOne from "../../assets/PouchPackagingMachineOne.jpeg";
+import SingleHeadROPPCappingMachine from "../../assets/SingleHeadROPPCappingMachine.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const SolutionsShowcase = () => {
   const scrollRef = useRef(null);
   const intervalRef = useRef(null);
+  const navigate = useNavigate();
 
   const solutions = [
     {
       id: 1,
       icon: <Factory className="w-12 h-12 text-blue-600 mb-4" />,
-      title: "Cap Making Machine",
+      title: "Pouch Packaging Machine",
       description:
         "Our advanced Cap Making Machine offers a reliable, high-speed solution for manufacturing caps with precision and efficiency...",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2024/9/454177302/QS/KW/OQ/84056891/bottle-cap-slitting-machine-250x250.jpg",
+      image: PouchPackagingMachine,
+      link: "/pouch-packaging-machine",
     },
     {
       id: 2,
       icon: <Factory className="w-12 h-12 text-blue-600 mb-4" />,
-      title: "Filling Machine",
+      title: "Single Head ROPP Capping Machine",
       description:
         "Our Filling Machine provides a fast, accurate, and hygienic solution for filling liquids or semi-liquids into containers...",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2024/9/454178356/EW/OM/US/84056891/bpm-mineral-water-filling-capping-machine-250x250.jpeg",
+      image: SingleHeadROPPCappingMachine,
+      link: "/single-head-ropp-capping-machine",
     },
     {
       id: 3,
       icon: <Droplet className="w-12 h-12 text-blue-600 mb-4" />,
-      title: "Liquid Filling Machine",
+      title: "Oil Cap Slitting And Folding Machine",
       description:
         "Our Liquid Filling Machine delivers precise, efficient, and contamination-free filling for a wide range of liquid products. Designed for speed...",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2024/6/428076351/UD/VP/DI/84056891/20231206-58266dce903d0a7037fb-250x250.png",
+      image: OilCapSlittingAndFoldingMachine,
+      link: "/pouch-packaging-machine",
     },
     {
       id: 4,
       icon: <Factory className="w-12 h-12 text-blue-600 mb-4" />,
-      title: "Folding Machine",
+      title: "Cap Slitting Machine",
       description:
         "Our Folding Machine offers a fast and accurate solution for folding materials with consistent precision. Built for high-performance ...",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2024/9/454176825/FP/JE/AC/84056891/cap-edge-folding-machine-250x250.jpg",
+      image: CapSlittingMachine,
+      link: "/pouch-packaging-machine",
     },
     {
       id: 5,
       icon: <Wrench className="w-12 h-12 text-blue-600 mb-4" />,
-      title: "Packaging Machine",
+      title: "Cap Slitting And Folding Machine",
       description:
         "Our Packaging Machine streamlines the packing process with speed, precision, and reliability. Designed to handle various product types...",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2024/9/454178113/WK/UW/PV/84056891/single-phase-pouch-packing-machine-250x250.jpg",
+      image: CapSlittingAndFoldingMachine,
+      link: "/pouch-packaging-machine",
     },
   ];
 
@@ -126,6 +134,7 @@ const SolutionsShowcase = () => {
 
   return (
     <section
+      id="product"
       className="py-16 px-4 bg-gray-50"
       role="region"
       aria-label="Our Solutions"
@@ -196,7 +205,10 @@ const SolutionsShowcase = () => {
                     {solution.description}
                   </p>
 
-                  <button className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300 group/btn">
+                  <button
+                    onClick={() => navigate(solution.link)}
+                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300 group/btn"
+                  >
                     Read More
                     <ChevronRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform duration-300" />
                   </button>

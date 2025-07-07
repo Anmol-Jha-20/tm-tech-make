@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
 import Hero from "../../assets/Hero.png";
+import Hero2 from "../../assets/Hero2.png";
 
 export default function AboutCompany() {
   return (
@@ -26,7 +27,7 @@ export default function AboutCompany() {
             {/* Team Photo */}
             <div className="relative">
               <img
-                src={Hero}
+                src={Hero2}
                 alt="Sona Machinery team members celebrating together in their manufacturing facility"
                 className="w-full h-64 sm:h-80 object-cover rounded-lg shadow-lg"
               />

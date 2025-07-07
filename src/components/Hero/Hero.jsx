@@ -178,11 +178,190 @@
 //   );
 // }
 
+// import React, { useState, useEffect } from "react";
+// import { ChevronLeft, ChevronRight, MessageCircle, Phone } from "lucide-react";
+// import HeroImage from "../../assets/Hero.png";
+// import HeroTwo from "../../assets/Hero2.png";
+// import HeroThree from "../../assets/Hero3.png";
+
+// const Hero = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+
+//   const slides = [
+//     {
+//       id: 1,
+//       title: "Discover the Power of",
+//       highlight: "CUTTING-EDGE TECHNOLOGY",
+//       subtitle: "in our Advanced Rice Milling Process",
+//       image:
+//         "https://5.imimg.com/data5/ANDROID/Default/2024/8/441619637/WI/JE/JL/84056891/product-jpeg-250x250.jpg",
+//     },
+//     {
+//       id: 2,
+//       title: "Experience Excellence in",
+//       highlight: "PRECISION ENGINEERING",
+//       subtitle: "for Superior Rice Processing Solutions",
+//       image: HeroTwo,
+//     },
+//     {
+//       id: 3,
+//       title: "Revolutionize Your Business with",
+//       highlight: "INNOVATIVE MACHINERY",
+//       subtitle: "delivering Unmatched Performance & Quality",
+//       image: HeroThree,
+//     },
+//   ];
+
+//   // Auto-scroll functionality
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentSlide((prev) => (prev + 1) % slides.length);
+//     }, 4000); // Change slide every 4 seconds
+
+//     return () => clearInterval(interval);
+//   }, [slides.length]);
+
+//   const nextSlide = () => {
+//     setCurrentSlide((prev) => (prev + 1) % slides.length);
+//   };
+
+//   const prevSlide = () => {
+//     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+//   };
+
+//   const goToSlide = (index) => {
+//     setCurrentSlide(index);
+//   };
+
+//   return (
+//     <div className="relative w-full h-screen overflow-hidden">
+//       {/* Slides Container */}
+//       <div
+//         className="flex transition-transform duration-1000 ease-in-out h-full"
+//         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+//       >
+//         {slides.map((slide, index) => (
+//           <div
+//             key={slide.id}
+//             className="min-w-full h-full relative flex items-center justify-center"
+//           >
+//             {/* Background Image */}
+//             <div
+//               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+//               style={{
+//                 backgroundImage: `url(${slide.image})`,
+//               }}
+//             />
+
+//             {/* Overlay */}
+//             {/* <div className="absolute inset-0 bg-black bg-opacity-50" /> */}
+
+//             {/* Content */}
+//             {/* <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+//               <div className="space-y-4 sm:space-y-6">
+//                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight">
+//                   {slide.title}
+//                 </h1>
+
+//                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-wider">
+//                   {slide.highlight}
+//                 </h2>
+
+//                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mt-4 sm:mt-6">
+//                   {slide.subtitle}
+//                 </p>
+
+//                 <div className="mt-8 sm:mt-12">
+//                   <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 sm:py-4 sm:px-10 rounded-lg text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+//                     Learn More
+//                   </button>
+//                 </div>
+//               </div>
+//             </div> */}
+
+//             {/* <div className="absolute right-4 sm:right-8 md:right-12 lg:right-16 xl:right-20 top-1/2 transform -translate-y-1/2 hidden md:block">
+//               <div className="relative">
+//                 <div className="w-48 h-72 lg:w-56 lg:h-80 xl:w-64 xl:h-88 bg-gray-900 rounded-2xl shadow-2xl border-4 border-gray-700 overflow-hidden">
+//                   <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+//                     <div className="text-white text-center p-4">
+//                       <div className="grid grid-cols-3 gap-2 mb-4">
+//                         {[...Array(9)].map((_, i) => (
+//                           <div
+//                             key={i}
+//                             className="w-8 h-8 bg-white bg-opacity-20 rounded-lg"
+//                           ></div>
+//                         ))}
+//                       </div>
+//                       <div className="text-xs opacity-75">
+//                         Smart Control Panel
+//                       </div>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div> */}
+//           </div>
+//         ))}
+//       </div>
+
+//       {/* Navigation Arrows */}
+//       <button
+//         onClick={prevSlide}
+//         className="absolute left-4 sm:left-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-20"
+//       >
+//         <ChevronLeft size={32} className="sm:w-10 sm:h-10" />
+//       </button>
+
+//       <button
+//         onClick={nextSlide}
+//         className="absolute right-4 sm:right-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-20"
+//       >
+//         <ChevronRight size={32} className="sm:w-10 sm:h-10" />
+//       </button>
+
+//       {/* Slide Indicators */}
+//       <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+//         {slides.map((_, index) => (
+//           <button
+//             key={index}
+//             onClick={() => goToSlide(index)}
+//             className={`w-3 h-3 rounded-full transition-all duration-300 ${
+//               index === currentSlide
+//                 ? "bg-blue-500 scale-125"
+//                 : "bg-white bg-opacity-50 hover:bg-opacity-75"
+//             }`}
+//           />
+//         ))}
+//       </div>
+
+//       {/* Floating Contact Buttons */}
+//       <div className="fixed right-4 sm:right-6 bottom-6 sm:bottom-8 flex flex-col space-y-3 z-30">
+//         <button className="bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
+//           <MessageCircle size={20} className="sm:w-6 sm:h-6" />
+//         </button>
+//         <button className="bg-blue-500 hover:bg-blue-600 text-white p-3 sm:p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
+//           <Phone size={20} className="sm:w-6 sm:h-6" />
+//         </button>
+//       </div>
+
+//       {/* Progress Bar */}
+//       {/* <div className="absolute bottom-0 left-0 w-full h-1 bg-black bg-opacity-30 z-20">
+//         <div
+//           className="h-full bg-blue-500 transition-all duration-300 ease-out"
+//           style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
+//         />
+//       </div> */}
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, MessageCircle, Phone } from "lucide-react";
-import HeroImage from "../../assets/Hero.png";
 import HeroTwo from "../../assets/Hero2.png";
 import HeroThree from "../../assets/Hero3.png";
+import HeroOne from "../../assets/HeroOne.png";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -193,7 +372,7 @@ const Hero = () => {
       title: "Discover the Power of",
       highlight: "CUTTING-EDGE TECHNOLOGY",
       subtitle: "in our Advanced Rice Milling Process",
-      image: HeroImage,
+      image: HeroOne,
     },
     {
       id: 2,
@@ -211,12 +390,10 @@ const Hero = () => {
     },
   ];
 
-  // Auto-scroll functionality
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000); // Change slide every 4 seconds
-
+    }, 4000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -239,66 +416,32 @@ const Hero = () => {
         className="flex transition-transform duration-1000 ease-in-out h-full"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
-        {slides.map((slide, index) => (
+        {slides.map((slide) => (
           <div
             key={slide.id}
-            className="min-w-full h-full relative flex items-center justify-center"
+            className="w-full h-screen flex-shrink-0 relative flex items-center justify-center"
           >
             {/* Background Image */}
             <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{
-                backgroundImage: `url(${slide.image})`,
-              }}
+              className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${slide.image})` }}
             />
 
-            {/* Overlay */}
-            {/* <div className="absolute inset-0 bg-black bg-opacity-50" /> */}
+            {/* Optional Overlay */}
+            {/* <div className="absolute inset-0 bg-black bg-opacity-40 z-10" /> */}
 
-            {/* Content */}
-            {/* <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-              <div className="space-y-4 sm:space-y-6">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight">
-                  {slide.title}
-                </h1>
-
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-wider">
-                  {slide.highlight}
-                </h2>
-
-                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mt-4 sm:mt-6">
-                  {slide.subtitle}
-                </p>
-
-                
-                <div className="mt-8 sm:mt-12">
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 sm:py-4 sm:px-10 rounded-lg text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="absolute right-4 sm:right-8 md:right-12 lg:right-16 xl:right-20 top-1/2 transform -translate-y-1/2 hidden md:block">
-              <div className="relative">
-                <div className="w-48 h-72 lg:w-56 lg:h-80 xl:w-64 xl:h-88 bg-gray-900 rounded-2xl shadow-2xl border-4 border-gray-700 overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                    <div className="text-white text-center p-4">
-                      <div className="grid grid-cols-3 gap-2 mb-4">
-                        {[...Array(9)].map((_, i) => (
-                          <div
-                            key={i}
-                            className="w-8 h-8 bg-white bg-opacity-20 rounded-lg"
-                          ></div>
-                        ))}
-                      </div>
-                      <div className="text-xs opacity-75">
-                        Smart Control Panel
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            {/* Optional Content */}
+            {/* <div className="relative z-20 text-white text-center px-4">
+              <h1 className="text-2xl sm:text-4xl lg:text-6xl font-light">
+                {slide.title}
+              </h1>
+              <h2 className="text-3xl sm:text-5xl lg:text-7xl font-bold">
+                {slide.highlight}
+              </h2>
+              <p className="text-lg sm:text-xl lg:text-2xl mt-4">{slide.subtitle}</p>
+              <button className="mt-6 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-lg font-semibold">
+                Learn More
+              </button>
             </div> */}
           </div>
         ))}
@@ -307,14 +450,13 @@ const Hero = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 sm:left-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-20"
+        className="absolute left-4 sm:left-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition duration-300 z-20"
       >
         <ChevronLeft size={32} className="sm:w-10 sm:h-10" />
       </button>
-
       <button
         onClick={nextSlide}
-        className="absolute right-4 sm:right-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-20"
+        className="absolute right-4 sm:right-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition duration-300 z-20"
       >
         <ChevronRight size={32} className="sm:w-10 sm:h-10" />
       </button>
@@ -336,21 +478,13 @@ const Hero = () => {
 
       {/* Floating Contact Buttons */}
       <div className="fixed right-4 sm:right-6 bottom-6 sm:bottom-8 flex flex-col space-y-3 z-30">
-        <button className="bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
+        <button className="bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg transition transform hover:scale-110">
           <MessageCircle size={20} className="sm:w-6 sm:h-6" />
         </button>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white p-3 sm:p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
+        <button className="bg-blue-500 hover:bg-blue-600 text-white p-3 sm:p-4 rounded-full shadow-lg transition transform hover:scale-110">
           <Phone size={20} className="sm:w-6 sm:h-6" />
         </button>
       </div>
-
-      {/* Progress Bar */}
-      {/* <div className="absolute bottom-0 left-0 w-full h-1 bg-black bg-opacity-30 z-20">
-        <div
-          className="h-full bg-blue-500 transition-all duration-300 ease-out"
-          style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
-        />
-      </div> */}
     </div>
   );
 };

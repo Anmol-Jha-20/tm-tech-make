@@ -55,7 +55,7 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Packaging Machine
+                    Pouch Packaging Machine
                   </a>
                 </li>
                 <li>
@@ -63,7 +63,7 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Cap Folding And Slitting Machnie
+                    Single Head ROPP Capping Machine
                   </a>
                 </li>
                 <li>
@@ -71,7 +71,7 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Wad Inserting Machine
+                    Oil Cap Slitting And Folding Machine
                   </a>
                 </li>
                 <li>
@@ -79,7 +79,7 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Slitting Machine
+                    Cap Slitting Machine
                   </a>
                 </li>
                 <li>
@@ -87,15 +87,7 @@ export default function Footer() {
                     href="#"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    Liquid Filling Machine
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
-                  >
-                    Filling Machine
+                    Cap Slitting And Folding Machine
                   </a>
                 </li>
                 {/* <li>
@@ -126,11 +118,9 @@ export default function Footer() {
                     <p>Ghaziabad, U.P.</p>
                     <p>India 201102</p> */}
                     <p>
-                      0,Shed No. 01,Arihant Estate, Kanbha Road, Nr.Ring Road
-                      Circle,Nr.Nalanda Estate
+                      47, Safal Industrial Estate, B/h. Zaveri Estate, Singarva
                     </p>
-                    <p> Odhav,Ahmedabad, Ahmedabad- 382415</p>{" "}
-                    <p>Gujarat, India</p>
+                    <p> Daskroi, Ahmedabad - 382430</p> <p>Gujarat, India</p>
                   </div>
                 </div>
 
@@ -147,10 +137,10 @@ export default function Footer() {
                 <div className="flex items-center space-x-3">
                   <Phone className="text-gray-600 flex-shrink-0" size={20} />
                   <a
-                    href="tel:+9197371 74655"
+                    href="tel:+919033471676"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                    +91 97371 74655
+                    +91 90334-71676
                   </a>
                 </div>
 
