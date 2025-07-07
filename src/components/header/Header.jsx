@@ -161,13 +161,13 @@ function Header() {
             <div className="hidden lg:flex space-x-8">
               <Link
                 to={"/"}
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
               >
                 {currentTranslation.home}
               </Link>
               <div className="relative group">
                 <Link to={"/about-us"}>
-                  <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
+                  <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center cursor-pointer">
                     {currentTranslation.aboutUs}{" "}
                     {/* <ChevronDown className="w-4 h-4 ml-1" /> */}
                   </button>
@@ -175,7 +175,7 @@ function Header() {
               </div>
               <div className="relative group">
                 <HashLink smooth to="/#product">
-                  <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
+                  <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center cursor-pointer">
                     {currentTranslation.products}{" "}
                     {/* <ChevronDown className="w-4 h-4 ml-1" /> */}
                   </button>
@@ -207,13 +207,13 @@ function Header() {
               </a> */}
               <Link
                 to={"/gallery"}
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
               >
                 Gallery
               </Link>
               <Link
                 to={"/contact-us"}
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
               >
                 {currentTranslation.contactUs}
               </Link>
@@ -221,7 +221,7 @@ function Header() {
 
             {/* Download Button & Mobile Menu */}
             <div className="flex items-center space-x-4">
-              <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+              <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm cursor-pointer">
                 {currentTranslation.downloadCatalogue}
               </button>
 

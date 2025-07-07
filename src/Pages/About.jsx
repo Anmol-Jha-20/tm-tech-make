@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
+import Hero from "../assets/Hero.png";
 
 export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false);
@@ -214,12 +215,15 @@ export default function AboutUs() {
               }`}
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Our Story
+                About Us
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Founded with a vision to revolutionize the packaging industry,
                 TM Tech Make has grown from a small workshop to a leading
-                manufacturer of sophisticated packaging machinery. Our journey
+                manufacturer of sophisticated packaging machinery. Established
+                as a Proprietor firm in the year 2024, we “TM Tech Make” are a
+                leading manufacturer of a wide range of Packaging Machines, Cap
+                Elevator Machines, Slitting Machines, and more. Our journey
                 began with a simple belief: that innovation and quality should
                 never be compromised.
               </p>
@@ -250,7 +254,7 @@ export default function AboutUs() {
               }`}
             >
               <div className="relative">
-                <div className="bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl p-8 text-white">
+                {/* <div className="bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl p-8 text-white">
                   <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                   <p className="text-blue-100 mb-6">
                     To deliver cutting-edge packaging solutions that enhance
@@ -267,7 +271,8 @@ export default function AboutUs() {
                       <div className="text-sm text-blue-100">Quality</div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                <img src={Hero} alt="" />
               </div>
             </div>
           </div>

@@ -13,12 +13,14 @@ import SingleHeadROPPCappingMachine from "../assets/SingleHeadROPPCappingMachine
 import OilCapSlittingAndFoldingMachine from "../assets/OilCapSlittingAndFoldingMachine.jpeg";
 import CapSlittingMachine from "../assets/CapSlittingMachine.jpeg";
 import CapSlittingAndFoldingMachine from "../assets/CapSlittingAndFoldingMachine.jpeg";
+import AutomaticPouchPackagingMachine from "../assets/PouchPackagingMachineOne.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const TechGallery = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
   const [filter, setFilter] = useState("all");
   const [viewMode, setViewMode] = useState("grid");
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   // Sample gallery data - replace with your actual machine images
   const galleryData = [
@@ -29,6 +31,7 @@ const TechGallery = () => {
       image: PouchPackagingMachine,
       description:
         "Our advanced Cap Making Machine offers a reliable, high-speed solution for manufacturing caps with precision and efficiency...",
+      link: "/pouch-packaging-machine",
     },
     {
       id: 2,
@@ -37,6 +40,7 @@ const TechGallery = () => {
       image: SingleHeadROPPCappingMachine,
       description:
         "Our Filling Machine provides a fast, accurate, and hygienic solution for filling liquids or semi-liquids into containers...",
+      link: "/single-head-ropp-capping-machine",
     },
     {
       id: 3,
@@ -45,6 +49,7 @@ const TechGallery = () => {
       image: OilCapSlittingAndFoldingMachine,
       description:
         "Our Liquid Filling Machine delivers precise, efficient, and contamination-free filling for a wide range of liquid products. Designed for speed...",
+      link: "/oil-cap-slitting-and-folding-machine",
     },
     {
       id: 4,
@@ -53,6 +58,7 @@ const TechGallery = () => {
       image: CapSlittingMachine,
       description:
         "Our Folding Machine offers a fast and accurate solution for folding materials with consistent precision. Built for high-performance ...",
+      link: "/cap-slitting-machine",
     },
     {
       id: 5,
@@ -61,6 +67,16 @@ const TechGallery = () => {
       image: CapSlittingAndFoldingMachine,
       description:
         "Our Packaging Machine streamlines the packing process with speed, precision, and reliability. Designed to handle various product types...",
+      link: "/cap-slitting-and-folding-machine",
+    },
+    {
+      id: 6,
+      title: "Automatic Pouch Packaging Machine",
+      category: "slitting-and-folding",
+      image: AutomaticPouchPackagingMachine,
+      description:
+        "This is a Fully Automatic Vertical Form Fill Seal (VFFS) Pouch Packing Machine, model KGN-VFFS-100P, designed for efficient...",
+      link: "/automatic-pouch-packaging-machine",
     },
   ];
 
@@ -81,43 +97,43 @@ const TechGallery = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const openModal = (image) => {
-    setSelectedImage(image);
-    document.body.style.overflow = "hidden";
-  };
+  // const openModal = (image) => {
+  //   setSelectedImage(image);
+  //   document.body.style.overflow = "hidden";
+  // };
 
-  const closeModal = () => {
-    setSelectedImage(null);
-    document.body.style.overflow = "unset";
-  };
+  // const closeModal = () => {
+  //   setSelectedImage(null);
+  //   document.body.style.overflow = "unset";
+  // };
 
-  const nextImage = () => {
-    const currentIndex = filteredData.findIndex(
-      (item) => item.id === selectedImage.id
-    );
-    const nextIndex = (currentIndex + 1) % filteredData.length;
-    setSelectedImage(filteredData[nextIndex]);
-  };
+  // const nextImage = () => {
+  //   const currentIndex = filteredData.findIndex(
+  //     (item) => item.id === selectedImage.id
+  //   );
+  //   const nextIndex = (currentIndex + 1) % filteredData.length;
+  //   setSelectedImage(filteredData[nextIndex]);
+  // };
 
-  const prevImage = () => {
-    const currentIndex = filteredData.findIndex(
-      (item) => item.id === selectedImage.id
-    );
-    const prevIndex =
-      (currentIndex - 1 + filteredData.length) % filteredData.length;
-    setSelectedImage(filteredData[prevIndex]);
-  };
+  // const prevImage = () => {
+  //   const currentIndex = filteredData.findIndex(
+  //     (item) => item.id === selectedImage.id
+  //   );
+  //   const prevIndex =
+  //     (currentIndex - 1 + filteredData.length) % filteredData.length;
+  //   setSelectedImage(filteredData[prevIndex]);
+  // };
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600 text-lg">Loading Gallery...</p>
-        </div>
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+  //       <div className="text-center">
+  //         <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto mb-4"></div>
+  //         <p className="text-gray-600 text-lg">Loading Gallery...</p>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -169,30 +185,6 @@ const TechGallery = () => {
 
       {/* Filters */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-          <div className="flex items-center mb-4">
-            <Filter className="w-5 h-5 text-blue-600 mr-2" />
-            <h2 className="text-xl font-semibold text-gray-900">
-              Filter by Category
-            </h2>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setFilter(category.id)}
-                className={`px-6 py-2 rounded-full transition-all duration-300 ${
-                  filter === category.id
-                    ? "bg-blue-600 text-white shadow-lg transform scale-105"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
-          </div>
-        </div> */}
-
         {/* Gallery Grid */}
         <div
           className={`grid gap-6 ${
@@ -207,7 +199,6 @@ const TechGallery = () => {
               className={`bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer ${
                 viewMode === "list" ? "flex" : ""
               }`}
-              onClick={() => openModal(item)}
             >
               <div
                 className={`relative ${
@@ -238,7 +229,10 @@ const TechGallery = () => {
                     {categories.find((cat) => cat.id === item.category)?.name ||
                       "Machine"}
                   </span> */}
-                  <button className="text-blue-600 hover:text-blue-800 font-medium">
+                  <button
+                    onClick={() => navigate(item.link)}
+                    className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer "
+                  >
                     View Details
                   </button>
                 </div>
@@ -258,7 +252,7 @@ const TechGallery = () => {
       </div>
 
       {/* Modal */}
-      {selectedImage && (
+      {/* {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
           <div className="max-w-4xl w-full relative">
             <button
@@ -311,10 +305,10 @@ const TechGallery = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 mt-16">
+      {/* <footer className="bg-gray-900 text-white py-12 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">TM Tech Make</h3>
@@ -327,7 +321,7 @@ const TechGallery = () => {
             </p>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };
