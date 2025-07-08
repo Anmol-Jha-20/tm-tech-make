@@ -177,7 +177,7 @@ const ContactPage = () => {
               <div>
                 <p className="font-semibold mb-2">Working Hours</p>
                 <p className="text-sm mb-1">Mon - Fri: 9:00 AM - 6:00 PM</p>
-                <p className="text-sm">Sat: 10:00 AM - 4:00 PM</p>
+                <p className="text-sm">Sat: 10:00 AM - 6:00 PM</p>
                 <p className="text-sm">Sun: Closed</p>
               </div>
             }
