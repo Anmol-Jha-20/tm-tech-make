@@ -9,6 +9,7 @@ import {
   ExternalLink,
   Section,
 } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -55,6 +56,32 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       {/* SEO Meta Tags would go in document head */}
+      <Helmet>
+        <title>Contact Us | TM Tech Make</title>
+        <meta
+          name="description"
+          content="Get in touch with TM Tech Make. Contact us for packaging machine inquiries, support, or business collaborations."
+        />
+        <meta
+          name="keywords"
+          content="Contact TM Tech Make, Packaging Machines, Get in Touch, Ahmedabad, Packaging Automation"
+        />
+        <meta name="author" content="Webvortex Solutions" />
+
+        {/* Open Graph Meta */}
+        <meta property="og:title" content="Contact TM Tech Make" />
+        <meta
+          property="og:description"
+          content="We’d love to hear from you. Contact TM Tech Make for machine support or business inquiries."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tmtechmake.com/contact" />
+        {/* <meta
+          property="og:image"
+          content="https://tmtechmake.com/og-image-contact.jpg"
+        /> */}
+      </Helmet>
+
       <style>{`
         @keyframes slideInUp {
           from {
@@ -110,15 +137,6 @@ const ContactPage = () => {
           </p>
           <div className="w-24 h-1 bg-white mx-auto animate-pulse-slow"></div>
         </div>
-
-        {/* Animated Background Elements */}
-        {/* <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white opacity-5 rounded-full animate-pulse"></div>
-          <div
-            className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white opacity-5 rounded-full animate-pulse"
-            style={{ animationDelay: "1s" }}
-          ></div>
-        </div> */}
       </div>
 
       {/* Contact Information Cards */}
@@ -325,33 +343,9 @@ const ContactPage = () => {
                 <ExternalLink className="w-4 h-4" />
               </a>
             </div>
-
-            {/* <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-              <h3 className="font-semibold text-gray-800 mb-2">Directions</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Located in the heart of Hanumantha Nagar, our office is easily
-                accessible by public transport. The nearest metro station is
-                just 2 km away, and ample parking is available for visitors.
-              </p>
-            </div> */}
           </div>
         </div>
       </div>
-
-      {/* Footer CTA */}
-      {/* <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Start Your Project?
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Let's discuss how we can help bring your vision to life.
-          </p>
-          <button className="bg-white text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 transform hover:scale-105">
-            Schedule a Consultation
-          </button>
-        </div>
-      </div> */}
     </div>
   );
 };

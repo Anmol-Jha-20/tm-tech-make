@@ -81,31 +81,7 @@ export default function AboutCompany() {
                 className="w-full h-96 lg:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-transparent"></div>
-
-              {/* Overlay Elements */}
-              {/* <div className="absolute bottom-6 right-6">
-                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-medium text-gray-800">
-                      Production Active
-                    </span>
-                  </div>
-                </div>
-              </div> */}
             </div>
-
-            {/* Stats Cards */}
-            {/* <div className="absolute -bottom-6 left-6 right-6 grid grid-cols-2 gap-4">
-              <div className="bg-white rounded-lg shadow-lg p-4 text-center">
-                <div className="text-2xl font-bold text-blue-600">25+</div>
-                <div className="text-sm text-gray-600">Years Experience</div>
-              </div>
-              <div className="bg-white rounded-lg shadow-lg p-4 text-center">
-                <div className="text-2xl font-bold text-orange-600">500+</div>
-                <div className="text-sm text-gray-600">Projects Completed</div>
-              </div>
-            </div> */}
           </div>
         </div>
 

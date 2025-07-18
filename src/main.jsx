@@ -14,6 +14,7 @@ import CapSlittingMachine from "./components/products/Cap Slitting Machine/CapSl
 import CapSlittingAndFoldingMachine from "./components/products/Cap-Slitting-And-Folding-Machine/CapSlittingAndFoldingMachine.jsx";
 import AutomaticPouchPackagingMachine from "./components/products/Automatic-Pouch-Packaging-Machine/AutomaticPouchPackagingMachine.jsx";
 import ProductsPage from "./Pages/OurProducts.jsx";
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
@@ -71,6 +72,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>
 );

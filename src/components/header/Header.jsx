@@ -1,18 +1,6 @@
 import React, { useState } from "react";
-import {
-  ChevronDown,
-  Phone,
-  Linkedin,
-  Instagram,
-  Facebook,
-  Youtube,
-  Twitter,
-  MessageCircle,
-  Menu,
-  X,
-} from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 import Logo from "../../assets/Logo.jpeg";
-import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import {
   FaLinkedin,
@@ -113,26 +101,6 @@ function Header() {
               <FaYoutube className="w-4 h-4 cursor-pointer hover:text-blue-300 transition-colors" />
               <FaTwitter className="w-4 h-4 cursor-pointer hover:text-blue-300 transition-colors" />
             </div>
-
-            {/* Language Selector */}
-            {/* <div className="relative">
-              <select
-                value={selectedLanguage}
-                onChange={(e) => setSelectedLanguage(e.target.value)}
-                className="bg-transparent border border-white rounded px-2 py-1 pr-8 text-xs cursor-pointer hover:bg-white hover:text-blue-900 transition-colors"
-              >
-                {languages.map((lang) => (
-                  <option key={lang} value={lang} className="text-black">
-                    {lang}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <span className="text-xs opacity-75">
-              {currentTranslation.poweredBy}{" "}
-              <span className="text-blue-300">Google</span>
-            </span> */}
           </div>
         </div>
       </div>
@@ -150,10 +118,6 @@ function Header() {
                   className="w-full max-w-[847px] h-[64px]"
                   alt=""
                 />
-                {/* <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-yellow-400 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">S</span>
-                </div>
-                <span className="text-2xl font-bold text-blue-900">SONA</span> */}
               </div>
             </div>
 
@@ -181,30 +145,7 @@ function Header() {
                   </button>
                 </Link>
               </div>
-              {/* <div className="relative group">
-                <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                  {currentTranslation.investors}{" "}
-                  <ChevronDown className="w-4 h-4 ml-1" />
-                </button>
-              </div>
-              <div className="relative group">
-                <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                  {currentTranslation.newsEvents}{" "}
-                  <ChevronDown className="w-4 h-4 ml-1" />
-                </button>
-              </div>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                {currentTranslation.careers}
-              </a>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                {currentTranslation.blogs}
-              </a> */}
+
               <Link
                 to={"/gallery"}
                 className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
@@ -263,30 +204,6 @@ function Header() {
               >
                 {currentTranslation.products}
               </Link>
-              {/* <a
-                href="#"
-                className="block text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                {currentTranslation.investors}
-              </a>
-              <a
-                href="#"
-                className="block text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                {currentTranslation.newsEvents}
-              </a> */}
-              {/* <a
-                href="#"
-                className="block text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                {currentTranslation.careers}
-              </a>
-              <a
-                href="#"
-                className="block text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                {currentTranslation.blogs}
-              </a> */}
               <Link
                 to={"/gallery"}
                 onClick={() => setIsMobileMenuOpen(false)}

@@ -187,21 +187,6 @@ const CustomerTestimonials = () => {
             ))}
           </div>
         </div>
-
-        {/* Progress Bar */}
-        {/* <div className="mt-8 max-w-md mx-auto">
-          <div className="w-full bg-white/20 rounded-full h-1">
-            <div
-              className="bg-white h-1 rounded-full transition-all duration-300"
-              style={{
-                width: `${((currentIndex + 1) / testimonials.length) * 100}%`,
-              }}
-            />
-          </div>
-          <div className="text-center mt-2 text-white/60 text-sm">
-            {currentIndex + 1} of {testimonials.length}
-          </div>
-        </div> */}
       </div>
     </section>
   );

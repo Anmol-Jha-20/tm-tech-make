@@ -16,6 +16,7 @@ import PouchPackagingMachine from "../assets/PouchPackagingMachine.jpeg";
 import AutomaticPouchPackagingMachine from "../assets/PouchPackagingMachineOne.jpeg";
 import SingleHeadROPPCappingMachine from "../assets/SingleHeadROPPCappingMachine.jpeg";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // Mock products/services data
 const products = [
@@ -174,25 +175,6 @@ const ProductCard = ({ product, index }) => {
           className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        {/* <div className="absolute top-4 left-4">
-          <span
-            className={`px-3 py-1 text-xs font-semibold rounded-full ${
-              product.badge === "Popular"
-                ? "bg-red-500 text-white"
-                : product.badge === "Trending"
-                ? "bg-green-500 text-white"
-                : product.badge === "Premium"
-                ? "bg-purple-500 text-white"
-                : product.badge === "New"
-                ? "bg-blue-500 text-white"
-                : product.badge === "Expert"
-                ? "bg-orange-500 text-white"
-                : "bg-indigo-500 text-white"
-            }`}
-          >
-            {product.badge}
-          </span>
-        </div> */}
       </div>
 
       <div className="p-6">
@@ -240,47 +222,6 @@ const ProductCard = ({ product, index }) => {
   );
 };
 
-// Stats Section Component
-// const StatsSection = () => {
-//   const [ref, isVisible] = useIntersectionObserver(0.3);
-
-//   const stats = [
-//     { icon: Users, value: "500+", label: "Happy Clients" },
-//     { icon: Award, value: "50+", label: "Awards Won" },
-//     { icon: Zap, value: "1000+", label: "Projects Completed" },
-//     { icon: Star, value: "4.9", label: "Client Rating" },
-//   ];
-
-//   return (
-//     <div
-//       ref={ref}
-//       className={`bg-gradient-to-r from-blue-600 to-purple-600 py-16 transition-all duration-1000 ${
-//         isVisible ? "opacity-100" : "opacity-0"
-//       }`}
-//     >
-//       <div className="container mx-auto px-4">
-//         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-//           {stats.map((stat, index) => (
-//             <div
-//               key={index}
-//               className={`text-center text-white transform transition-all duration-700 ${
-//                 isVisible
-//                   ? "translate-y-0 opacity-100"
-//                   : "translate-y-8 opacity-0"
-//               }`}
-//               style={{ transitionDelay: isVisible ? `${index * 0.2}s` : "0s" }}
-//             >
-//               <stat.icon size={48} className="mx-auto mb-4" />
-//               <div className="text-3xl font-bold mb-2">{stat.value}</div>
-//               <div className="text-blue-100">{stat.label}</div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
 // Main Products Page Component
 const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -292,6 +233,25 @@ const ProductsPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+      <Helmet>
+        <title>Our Products | TM Tech Make</title>
+        <meta
+          name="description"
+          content="Learn about TM Tech Make, a leading manufacturer of packaging machines, cap elevator machines, and slitting machines, delivering high-quality automation solutions worldwide."
+        />
+        <meta
+          name="keywords"
+          content="TM Tech Make Products, Packaging Machines, Cap Elevator Machines, Slitting Machines, Industrial Automation"
+        />
+        <meta name="author" content="Webvortex Solutions" />
+        <meta property="og:title" content="Our Products | TM Tech Make" />
+        <meta
+          property="og:description"
+          content="Discover our story, expertise, and milestones as a premier packaging machinery manufacturer."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tmtechmake.com/our-products" />
+      </Helmet>
       {/* Hero Section */}
       <div
         ref={heroRef}
@@ -345,55 +305,13 @@ const ProductsPage = () => {
         </div>
       </div>
 
-      {/* Stats Section */}
-      {/* <StatsSection /> */}
-
       <div className="container mx-auto px-4 py-16">
-        {/* Category Filters */}
-        {/* <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">
-            Explore Our Solutions
-          </h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  selectedCategory === category
-                    ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg transform scale-105"
-                    : "bg-white text-gray-700 hover:bg-gray-50 shadow-md hover:shadow-lg"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div> */}
-
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product, index) => (
             <ProductCard key={product.id} product={product} index={index} />
           ))}
         </div>
-
-        {/* CTA Section */}
-        {/* <div className="text-center mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white">
-          <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss how our solutions can help transform your business and
-            achieve your goals.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
-              Get Free Consultation
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300">
-              View Portfolio
-            </button>
-          </div>
-        </div> */}
       </div>
     </div>
   );

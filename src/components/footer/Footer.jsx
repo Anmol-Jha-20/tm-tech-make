@@ -1,7 +1,7 @@
 import React from "react";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Outlet, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 export default function Footer() {
@@ -12,25 +12,6 @@ export default function Footer() {
   }, [location.pathname]);
   return (
     <div className="bg-white">
-      {/* Fixed WhatsApp Button */}
-      {/* <div className="fixed bottom-4 right-4 z-50">
-        <div className="relative">
-          <button className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-colors duration-200">
-            <MessageCircle size={24} />
-          </button>
-          <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-            1
-          </div>
-        </div>
-      </div> */}
-
-      {/* Fixed Phone Button */}
-      {/* <div className="fixed bottom-20 right-4 z-50">
-        <button className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-colors duration-200">
-          <Phone size={24} />
-        </button>
-      </div> */}
-
       {/* Main Footer Content */}
       <footer className="bg-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -106,14 +87,6 @@ export default function Footer() {
                     Automatic Pouch Packaging Machine
                   </Link>
                 </li>
-                {/* <li>
-                  <a
-                    href="#"
-                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
-                  >
-                    Liquid Filling Machine
-                  </a>
-                </li> */}
               </ul>
             </div>
 
@@ -130,9 +103,6 @@ export default function Footer() {
                     size={20}
                   />
                   <div className="text-gray-700">
-                    {/* <p>F-16 & C-1, Sector A-3, Tronica City, Loni</p>
-                    <p>Ghaziabad, U.P.</p>
-                    <p>India 201102</p> */}
                     <p>
                       47, Safal Industrial Estate, B/h. Zaveri Estate, Singarva
                     </p>
@@ -140,16 +110,6 @@ export default function Footer() {
                   </div>
                 </div>
 
-                {/* Email */}
-                {/* <div className="flex items-center space-x-3">
-                  <Mail className="text-gray-600 flex-shrink-0" size={20} />
-                  <a
-                    href="mailto:inquiry@sonamachinery.com"
-                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
-                  >
-                    inquiry@sonamachinery.com
-                  </a>
-                </div> */}
                 <div className="flex items-center space-x-3">
                   <Phone className="text-gray-600 flex-shrink-0" size={20} />
                   <a
@@ -159,17 +119,6 @@ export default function Footer() {
                     +91 90334-71676
                   </a>
                 </div>
-
-                {/* Phone */}
-                {/* <div className="flex items-center space-x-3">
-                  <Phone className="text-gray-600 flex-shrink-0" size={20} />
-                  <a
-                    href="tel:+91-9599-002201"
-                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
-                  >
-                    +91-9599-002201
-                  </a>
-                </div> */}
               </div>
             </div>
           </div>

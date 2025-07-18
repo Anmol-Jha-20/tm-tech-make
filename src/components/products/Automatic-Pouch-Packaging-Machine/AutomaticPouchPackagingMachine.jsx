@@ -217,19 +217,7 @@ const AutomaticPouchPackagingMachine = () => {
               </h1>
               <p className="text-xl text-gray-600 mb-4">Model: KGN-VFFS-100P</p>
 
-              <div className="flex items-center space-x-4 mb-6">
-                {/* <div className="flex items-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-5 h-5 text-yellow-400 fill-current"
-                    />
-                  ))}
-                  <span className="text-gray-600 ml-2">
-                    (4.8/5) - 127 Reviews
-                  </span>
-                </div> */}
-              </div>
+              <div className="flex items-center space-x-4 mb-6"></div>
 
               <div className="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-4 mb-6">
                 <div className="flex items-center justify-between">
@@ -297,29 +285,6 @@ const AutomaticPouchPackagingMachine = () => {
                 </button>
               </Link>
             </div>
-
-            {/* Additional Actions */}
-            {/* <div className="flex items-center justify-between pt-4 border-t">
-              <div className="flex space-x-4">
-                <button
-                  onClick={() => setIsWishlisted(!isWishlisted)}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors ${
-                    isWishlisted
-                      ? "bg-red-50 text-red-600"
-                      : "bg-gray-100 text-gray-600"
-                  }`}
-                >
-                  <Heart
-                    className={`w-5 h-5 ${isWishlisted ? "fill-current" : ""}`}
-                  />
-                  <span>Wishlist</span>
-                </button>
-                <button className="flex items-center space-x-2 px-4 py-2 bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition-colors">
-                  <Share2 className="w-5 h-5" />
-                  <span>Share</span>
-                </button>
-              </div>
-            </div> */}
           </div>
         </div>
 

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, MessageCircle, Phone } from "lucide-react";
 import HeroTwo from "../../assets/Hero2.png";
 import HeroThree from "../../assets/Hero3.png";
-import HeroOne from "../../assets/HeroOne.png";
-import HeroImage from "../../assets/Hero.png";
 import HeroSevenImage from "../../assets/HeroSeven.png";
 
 const Hero = () => {
@@ -69,23 +67,6 @@ const Hero = () => {
               className="absolute inset-0 w-full bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${slide.image})` }}
             />
-
-            {/* Optional Overlay */}
-            {/* <div className="absolute inset-0 bg-black bg-opacity-40 z-10" /> */}
-
-            {/* Optional Content */}
-            {/* <div className="relative z-20 text-white text-center px-4">
-              <h1 className="text-2xl sm:text-4xl lg:text-6xl font-light">
-                {slide.title}
-              </h1>
-              <h2 className="text-3xl sm:text-5xl lg:text-7xl font-bold">
-                {slide.highlight}
-              </h2>
-              <p className="text-lg sm:text-xl lg:text-2xl mt-4">{slide.subtitle}</p>
-              <button className="mt-6 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-lg font-semibold">
-                Learn More
-              </button>
-            </div> */}
           </div>
         ))}
       </div>

@@ -15,6 +15,7 @@ import CapSlittingMachine from "../assets/CapSlittingMachine.jpeg";
 import CapSlittingAndFoldingMachine from "../assets/CapSlittingAndFoldingMachine.jpeg";
 import AutomaticPouchPackagingMachine from "../assets/PouchPackagingMachineOne.jpeg";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const TechGallery = () => {
   const [filter, setFilter] = useState("all");
@@ -22,7 +23,6 @@ const TechGallery = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  // Sample gallery data - replace with your actual machine images
   const galleryData = [
     {
       id: 1,
@@ -97,47 +97,28 @@ const TechGallery = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // const openModal = (image) => {
-  //   setSelectedImage(image);
-  //   document.body.style.overflow = "hidden";
-  // };
-
-  // const closeModal = () => {
-  //   setSelectedImage(null);
-  //   document.body.style.overflow = "unset";
-  // };
-
-  // const nextImage = () => {
-  //   const currentIndex = filteredData.findIndex(
-  //     (item) => item.id === selectedImage.id
-  //   );
-  //   const nextIndex = (currentIndex + 1) % filteredData.length;
-  //   setSelectedImage(filteredData[nextIndex]);
-  // };
-
-  // const prevImage = () => {
-  //   const currentIndex = filteredData.findIndex(
-  //     (item) => item.id === selectedImage.id
-  //   );
-  //   const prevIndex =
-  //     (currentIndex - 1 + filteredData.length) % filteredData.length;
-  //   setSelectedImage(filteredData[prevIndex]);
-  // };
-
-  // if (loading) {
-  //   return (
-  //     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-  //       <div className="text-center">
-  //         <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto mb-4"></div>
-  //         <p className="text-gray-600 text-lg">Loading Gallery...</p>
-  //       </div>
-  //     </div>
-  //   );
-  // }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* SEO Meta Tags (would be in document head in real implementation) */}
+      <Helmet>
+        <title>Our Gallery | TM Tech Make</title>
+        <meta
+          name="description"
+          content="Learn about TM Tech Make, a leading manufacturer of packaging machines, cap elevator machines, and slitting machines, delivering high-quality automation solutions worldwide."
+        />
+        <meta
+          name="keywords"
+          content="TM Tech Make Products, Packaging Machines, Cap Elevator Machines, Slitting Machines, Industrial Automation"
+        />
+        <meta name="author" content="Webvortex Solutions" />
+        <meta property="og:title" content="Our Products | TM Tech Make" />
+        <meta
+          property="og:description"
+          content="Discover our story, expertise, and milestones as a premier packaging machinery manufacturer."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tmtechmake.com//gallery" />
+      </Helmet>
       <div className="hidden">
         <h1>TM Tech Make - Industrial Machinery Gallery</h1>
         <meta
@@ -225,10 +206,6 @@ const TechGallery = () => {
                 </h3>
                 <p className="text-gray-600 mb-4">{item.description}</p>
                 <div className="flex items-center justify-between">
-                  {/* <span className="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
-                    {categories.find((cat) => cat.id === item.category)?.name ||
-                      "Machine"}
-                  </span> */}
                   <button
                     onClick={() => navigate(item.link)}
                     className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer "
@@ -250,78 +227,6 @@ const TechGallery = () => {
           </div>
         )}
       </div>
-
-      {/* Modal */}
-      {/* {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-          <div className="max-w-4xl w-full relative">
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
-            >
-              <X className="w-8 h-8" />
-            </button>
-
-            <button
-              onClick={prevImage}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
-            >
-              <ChevronLeft className="w-8 h-8" />
-            </button>
-
-            <button
-              onClick={nextImage}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
-            >
-              <ChevronRight className="w-8 h-8" />
-            </button>
-
-            <div className="bg-white rounded-lg overflow-hidden">
-              <img
-                src={selectedImage.image}
-                alt={selectedImage.title}
-                className="w-full h-96 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {selectedImage.title}
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  {selectedImage.description}
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full">
-                    {
-                      categories.find(
-                        (cat) => cat.id === selectedImage.category
-                      )?.name
-                    }
-                  </span>
-                  <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                    Request Quote
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )} */}
-
-      {/* Footer */}
-      {/* <footer className="bg-gray-900 text-white py-12 mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4">TM Tech Make</h3>
-            <p className="text-gray-400 mb-4">
-              Leading manufacturer of packaging machines, cap elevator machines,
-              and slitting machines
-            </p>
-            <p className="text-gray-400">
-              Quality machinery for industrial excellence
-            </p>
-          </div>
-        </div>
-      </footer> */}
     </div>
   );
 };

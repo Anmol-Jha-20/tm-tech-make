@@ -10,6 +10,7 @@ import {
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import Hero from "../assets/Hero.png";
+import { Helmet } from "react-helmet";
 
 export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false);
@@ -126,6 +127,30 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* SEO Meta Information */}
+      <Helmet>
+        <title>About Us | TM Tech Make</title>
+        <meta
+          name="description"
+          content="Learn about TM Tech Make, a leading manufacturer of packaging machines, cap elevator machines, and slitting machines, delivering high-quality automation solutions worldwide."
+        />
+        <meta
+          name="keywords"
+          content="About TM Tech Make, Packaging Machines, Cap Elevator Machines, Slitting Machines, Industrial Automation"
+        />
+        <meta name="author" content="Webvortex Solutions" />
+        <meta property="og:title" content="About Us | TM Tech Make" />
+        <meta
+          property="og:description"
+          content="Discover our story, expertise, and milestones as a premier packaging machinery manufacturer."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tmtechmake.com/about-us" />
+        {/* <meta
+          property="og:image"
+          content="https://tmtechmake.com/og-image.jpg"
+        /> */}
+      </Helmet>
+
       <div className="hidden">
         <h1>TM Tech Make - Leading Packaging Machine Manufacturer</h1>
         <p>
@@ -168,40 +193,6 @@ export default function AboutUs() {
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
       </section>
-
-      {/* Stats Section */}
-      {/* <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl sm:text-5xl font-bold text-blue-600 mb-2">
-                {counters.experience}+
-              </div>
-              <div className="text-gray-600 font-medium">Years Experience</div>
-            </div>
-            <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl sm:text-5xl font-bold text-green-600 mb-2">
-                {counters.clients}+
-              </div>
-              <div className="text-gray-600 font-medium">Happy Clients</div>
-            </div>
-            <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl sm:text-5xl font-bold text-purple-600 mb-2">
-                {counters.projects}+
-              </div>
-              <div className="text-gray-600 font-medium">
-                Projects Completed
-              </div>
-            </div>
-            <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl sm:text-5xl font-bold text-orange-600 mb-2">
-                {counters.countries}+
-              </div>
-              <div className="text-gray-600 font-medium">Countries Served</div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Our Story Section */}
       <section className="py-20 bg-gradient-to-r from-gray-50 to-blue-50">
@@ -254,24 +245,6 @@ export default function AboutUs() {
               }`}
             >
               <div className="relative">
-                {/* <div className="bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                  <p className="text-blue-100 mb-6">
-                    To deliver cutting-edge packaging solutions that enhance
-                    productivity, ensure quality, and drive sustainable growth
-                    for our clients across the globe.
-                  </p>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
-                      <div className="text-2xl font-bold">24/7</div>
-                      <div className="text-sm text-blue-100">Support</div>
-                    </div>
-                    <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
-                      <div className="text-2xl font-bold">100%</div>
-                      <div className="text-sm text-blue-100">Quality</div>
-                    </div>
-                  </div>
-                </div> */}
                 <img src={Hero} alt="" />
               </div>
             </div>
@@ -349,60 +322,6 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-
-      {/* Timeline Section */}
-      {/* <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Our Journey
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Milestones that define our commitment to excellence and innovation
-            </p>
-          </div>
-
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-200"></div>
-
-            {milestones.map((milestone, index) => (
-              <div
-                key={index}
-                className={`relative flex items-center justify-center mb-12 ${
-                  isVisible
-                    ? "translate-y-0 opacity-100"
-                    : "translate-y-10 opacity-0"
-                }`}
-                style={{ transitionDelay: `${index * 200}ms` }}
-              >
-                <div
-                  className={`w-full ${
-                    index % 2 === 0 ? "lg:pr-1/2" : "lg:pl-1/2"
-                  }`}
-                >
-                  <div
-                    className={`bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 ${
-                      index % 2 === 0 ? "lg:mr-8" : "lg:ml-8"
-                    }`}
-                  >
-                    <div className="flex items-center gap-4 mb-3">
-                      <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-                        {milestone.year}
-                      </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
-                        {milestone.event}
-                      </h3>
-                    </div>
-                    <p className="text-gray-600">{milestone.desc}</p>
-                  </div>
-                </div>
-
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-blue-900 mt-4 text-white">
