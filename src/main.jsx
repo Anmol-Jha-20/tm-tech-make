@@ -15,6 +15,12 @@ import CapSlittingAndFoldingMachine from "./components/products/Cap-Slitting-And
 import AutomaticPouchPackagingMachine from "./components/products/Automatic-Pouch-Packaging-Machine/AutomaticPouchPackagingMachine.jsx";
 import ProductsPage from "./Pages/OurProducts.jsx";
 import { HelmetProvider } from "react-helmet-async";
+import Blog from "./Pages/Blog/Blog.jsx";
+import TmtRollingMillBlog from "./Pages/Blog/TmtRollingMillBlog.jsx";
+import TmtBarPlantBlog from "./Pages/Blog/TmtBarPlantBlog.jsx";
+import TMTMachineEquipmentBlog from "./Pages/Blog/TmtMachineEquipmentBlog.jsx";
+import CncMachineEquipmentBlog from "./Pages/Blog/CncMachineEquipmentBlog.jsx";
+import TmtPlantEquipmentBlog from "./Pages/Blog/TmtPlantEquipmentBlog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +47,30 @@ const router = createBrowserRouter([
       {
         path: "/gallery",
         element: <TechGallery />,
+      },
+      {
+        path: "/Blog",
+        element: <Blog />,
+      },
+      {
+        path: "/tmt-rolling-mill-blog",
+        element: <TmtRollingMillBlog />,
+      },
+      {
+        path: "/tmt-bar-plant-blog",
+        element: <TmtBarPlantBlog />,
+      },
+      {
+        path: "/tmt-machine-equipment-blog",
+        element: <TMTMachineEquipmentBlog />,
+      },
+      {
+        path: "/cnc-machine-equipment-blog",
+        element: <CncMachineEquipmentBlog />,
+      },
+      {
+        path: "/tmt-plant-equipment-blog",
+        element: <TmtPlantEquipmentBlog />,
       },
       {
         path: "/pouch-packaging-machine",

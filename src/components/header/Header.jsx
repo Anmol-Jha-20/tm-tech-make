@@ -153,6 +153,12 @@ function Header() {
                 Gallery
               </Link>
               <Link
+                to={"/blog"}
+                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+              >
+                Blog
+              </Link>
+              <Link
                 to={"/contact-us"}
                 className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
               >
@@ -210,6 +216,13 @@ function Header() {
                 className="block text-gray-700 transition-colors"
               >
                 Gallery
+              </Link>
+              <Link
+                to={"/blog"}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-gray-700 transition-colors"
+              >
+                Blog
               </Link>
               <Link
                 to={"/contact-us"}
