@@ -21,6 +21,9 @@ import TmtBarPlantBlog from "./Pages/Blog/TmtBarPlantBlog.jsx";
 import TMTMachineEquipmentBlog from "./Pages/Blog/TmtMachineEquipmentBlog.jsx";
 import CncMachineEquipmentBlog from "./Pages/Blog/CncMachineEquipmentBlog.jsx";
 import TmtPlantEquipmentBlog from "./Pages/Blog/TmtPlantEquipmentBlog.jsx";
+import PouchPackagingMachineBlog from "./Pages/Blog/PouchPackagingMachineBlog.jsx";
+import ROPPCappingBlog from "./Pages/Blog/SingleHeadRoppBlog.jsx";
+import OilCapSlitingFoldingBlog from "./Pages/Blog/OilCapSlittingFolding.jsx";
 
 const router = createBrowserRouter([
   {
@@ -71,6 +74,18 @@ const router = createBrowserRouter([
       {
         path: "/tmt-plant-equipment-blog",
         element: <TmtPlantEquipmentBlog />,
+      },
+      {
+        path: "/pouch-packaging-machine-blog",
+        element: <PouchPackagingMachineBlog />,
+      },
+      {
+        path: "/single-head-ropp-caping-blog",
+        element: <ROPPCappingBlog />,
+      },
+      {
+        path: "/oil-cap-slitting-folding-blog",
+        element: <OilCapSlitingFoldingBlog />,
       },
       {
         path: "/pouch-packaging-machine",

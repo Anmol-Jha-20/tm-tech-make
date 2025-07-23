@@ -7,12 +7,13 @@ import {
   Award,
   ArrowRight,
 } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 export default function TmtBarPlantBlog() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* SEO Meta Tags */}
-      <div className="hidden">
+      <Helmet>
         <title>
           How to Start a TMT Bar Plant in India | Setup & Cost Guide
         </title>
@@ -24,7 +25,7 @@ export default function TmtBarPlantBlog() {
           name="keywords"
           content="How to start a TMT bar plant in India, TMT plant installation service in Lucknow, TMT bar plant setup in Kolkata, Turnkey rolling mill solution in Punjab, TMT rolling mill in Hyderabad"
         />
-      </div>
+      </Helmet>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">

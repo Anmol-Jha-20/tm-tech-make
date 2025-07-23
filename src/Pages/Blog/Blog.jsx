@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from "react";
-import {
-  Award,
-  Users,
-  Wrench,
-  Globe,
-  ArrowRight,
-  CheckCircle,
-} from "lucide-react";
-
+import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 import { Helmet } from "react-helmet-async";
+import PouchPackagingMachineImage from "../../assets/PouchPackagingMachine.jpeg";
+import SingleHeadRoppImage from "../../assets/SingleHeadROPPCappingMachine.jpeg";
+import OilCapSlittingAndFolding from "../../assets/OilCapSlittingAndFoldingMachine.jpeg";
 
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
@@ -92,6 +86,31 @@ export default function Blog() {
             "Energy efficiency",
           ],
           link: "/tmt-plant-equipment-blog",
+        },
+        {
+          title:
+            "Pouch Packaging Machine Manufacturer in Ahmedabad – Reliable, Affordable & Innovative",
+          description:
+            "The growing demand for efficient, hygienic, and cost-effective packaging solutions has led to a boom in the use of pouch packaging machines across multiple industries. Ahmedabad, one of India's key industrial hubs, is home to numerous manufacturers who specialize in high-quality pouch packaging machinery.",
+          image: PouchPackagingMachineImage,
+          specs: ["Efficient", "Automated", "Versatile"],
+          link: "/pouch-packaging-machine-blog",
+        },
+        {
+          title: "Single Head ROPP Capping Machine in Gujarat",
+          description:
+            "In today’s fast-paced manufacturing environment, ensuring the safety, hygiene, and shelf life of liquid-based products is critical. The Single Head ROPP (Roll-On Pilfer Proof) Capping Machine plays a vital role in sealing bottles securely and efficiently. If you’re searching for a high-performance ROPP capping machine in Gujarat, then TmTeckMake is your trusted partner.",
+          image: SingleHeadRoppImage,
+          specs: ["Durable", "Fast", "Reliable"],
+          link: "/single-head-ropp-caping-blog",
+        },
+        {
+          title: "Oil Cap Slitting and Folding Machine Manufacturer in Rajkot",
+          description:
+            "In the modern packaging industry, precision and tamper-resistance are non-negotiable. Whether you're sealing edible oils, lubricants, or medicinal syrups, the integrity of the cap is key to maintaining product quality and consumer trust. That’s where the Oil Cap Slitting and Folding Machine steps in—a must-have for ensuring tamper-proof aluminum closures.",
+          image: OilCapSlittingAndFolding,
+          specs: ["Precise", "Automated", "Efficient"],
+          link: "/oil-cap-slitting-folding-blog",
         },
       ],
     },
