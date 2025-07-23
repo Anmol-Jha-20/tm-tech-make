@@ -12,12 +12,13 @@ import {
   Award,
   ChevronRight,
 } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 export default function ROPPCappingBlog() {
   return (
     <div className="min-h-screen bg-white">
       {/* SEO Meta Tags */}
-      <head>
+      <Helmet>
         <title>
           Top Single Head ROPP Capping Machine in Gujarat | TmTeckMake
         </title>
@@ -30,7 +31,7 @@ export default function ROPPCappingBlog() {
           content="Single Head ROPP Capping Machine in Gujarat, ROPP Capping Machine Manufacturer, Automatic bottle capping machine Gujarat"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
+      </Helmet>
 
       <section className="bg-gradient-to-r from-blue-50 to-white py-12 lg:py-20">
         <div className="container mx-auto px-4">

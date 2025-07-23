@@ -13,12 +13,13 @@ import {
   Clock,
   Settings,
 } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const OilCapSlitingFoldingBlog = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* SEO Meta Tags (would be in head in real implementation) */}
-      <div className="hidden">
+      <Helmet>
         <meta
           name="title"
           content="Top Oil Cap Slitting and Folding Machine Manufacturer in Rajkot | TmTeckMake"
@@ -31,7 +32,7 @@ const OilCapSlitingFoldingBlog = () => {
           name="keywords"
           content="Oil Cap Slitting and Folding Machine Manufacturer in Rajkot, Cap slitting machine supplier Gujarat, Oil cap folding equipment, TmTeckMake Rajkot"
         />
-      </div>
+      </Helmet>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-50 to-white py-16 px-4">
