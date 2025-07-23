@@ -5,6 +5,8 @@ import { Helmet } from "react-helmet-async";
 import PouchPackagingMachineImage from "../../assets/PouchPackagingMachine.jpeg";
 import SingleHeadRoppImage from "../../assets/SingleHeadROPPCappingMachine.jpeg";
 import OilCapSlittingAndFolding from "../../assets/OilCapSlittingAndFoldingMachine.jpeg";
+import TmtBarPlant from "../../assets/TmtBarPlant.png";
+import TmtBarPlantEquipment from "../../assets/TmtBarPlantEquipment.png";
 
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,8 +42,7 @@ export default function Blog() {
             "How to Start a TMT Bar Plant in India – Cost, Setup, & Turnkey Solutions in Hyderabad, Pune, and Chennai",
           description:
             "Learn how to start a TMT bar plant in India with insights on cost, setup, and turnkey solutions. Explore expert services in Hyderabad, Pune, Lucknow, Kolkata & Punjab.",
-          image:
-            "https://cdn.pixabay.com/photo/2014/10/05/08/11/iron-rods-474792_1280.jpg",
+          image: TmtBarPlant,
           specs: ["High ROI", "Scalability", "Government incentives"],
           link: "/tmt-bar-plant-blog",
         },
@@ -78,8 +79,7 @@ export default function Blog() {
             "Affordable TMT Plant Equipment & Turnkey Solutions in India – From Coimbatore to Jharkhand",
           description:
             "Find affordable TMT plant equipment in India with expert installation in Coimbatore, turnkey solutions in Chennai, and trusted TMT bar manufacturers in Jharkhand.",
-          image:
-            "https://cdn.pixabay.com/photo/2016/04/24/19/29/spain-1350440_1280.jpg",
+          image: TmtBarPlantEquipment,
           specs: [
             "Lower upfront investment",
             "Reduced production downtime",
