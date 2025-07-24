@@ -176,7 +176,7 @@ export default function Blog() {
           content="Discover our story, expertise, and milestones as a premier packaging machinery manufacturer."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tmtechmake.com/Blog" />
+        <meta property="og:url" content="https://tmtechmake.com/blog" />
         {/* <meta
           property="og:image"
           content="https://tmtechmake.com/og-image.jpg"
