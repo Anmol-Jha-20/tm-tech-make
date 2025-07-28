@@ -5,8 +5,8 @@ import { Helmet } from "react-helmet-async";
 import PouchPackagingMachineImage from "../../assets/PouchPackagingMachine.jpeg";
 import SingleHeadRoppImage from "../../assets/SingleHeadROPPCappingMachine.jpeg";
 import OilCapSlittingAndFolding from "../../assets/OilCapSlittingAndFoldingMachine.jpeg";
-import TmtBarPlant from "../../assets/TmtBarPlant.png";
-import TmtBarPlantEquipment from "../../assets/TmtBarPlantEquipment.png";
+import pouchpackagingmachineimage from "../../assets/PouchPackagingMachineTwo.png";
+import PouchpackagingmachineimageTwo from "../../assets/PouchPackagingMachineThree.png";
 
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,11 +25,10 @@ export default function Blog() {
       items: [
         {
           title:
-            "Top TMT Rolling Mill Manufacturers in India – Best Suppliers in Delhi, Mumbai, Gujarat & More",
+            "Best Packaging & Capping Machines in Gujarat: Ahmedabad, Surat, Vadodara, Rajkot, Gandhinagar",
           description:
-            "Explore leading TMT rolling mill suppliers in Delhi, Mumbai, Ahmedabad, Gujarat, and Kolkata. Get expert machinery and plant setup support.",
-          image:
-            "https://4.imimg.com/data4/YO/JN/MY-1313795/tmt-rolling-mill.jpg",
+            "Gujarat is one of India's fastest-growing industrial hubs, home to countless manufacturing units and packaging plants. Cities like Ahmedabad, Surat, Vadodara, Rajkot, and Gandhinagar play a vital role in the development of India’s packaging and bottling industries. With a growing demand for high-speed, automated solutions, companies are increasingly investing in top-quality equipment such as pouch packaging machines, ROPP capping machines, cap slitting machines, and oil cap folding units.",
+          image: PouchpackagingmachineimageTwo,
           specs: [
             "High tensile strength",
             "Earthquake resistance",
@@ -39,20 +38,19 @@ export default function Blog() {
         },
         {
           title:
-            "How to Start a TMT Bar Plant in India – Cost, Setup, & Turnkey Solutions in Hyderabad, Pune, and Chennai",
+            "Automatic Pouch Packaging & ROPP Capping Machines in Gujarat – Supplier in Ahmedabad, Surat & More",
           description:
-            "Learn how to start a TMT bar plant in India with insights on cost, setup, and turnkey solutions. Explore expert services in Hyderabad, Pune, Lucknow, Kolkata & Punjab.",
-          image: TmtBarPlant,
+            "Gujarat is one of India’s fastest-growing industrial states, renowned for its manufacturing, engineering, and packaging solutions. The demand for efficient, automated packaging machinery—especially automatic pouch packaging machines and ROPP capping machines—has grown exponentially in cities like Ahmedabad, Surat, Rajkot, Vadodara, and Bhavnagar. With a focus on reducing manual labor, increasing speed, and ensuring hygiene and product consistency, businesses across sectors are investing in advanced machinery solutions.",
+          image: pouchpackagingmachineimage,
           specs: ["High ROI", "Scalability", "Government incentives"],
           link: "/tmt-bar-plant-blog",
         },
         {
           title:
-            "TMT Machine & Steel Equipment Dealers in Gujarat, Noida, and Tamil Nadu – A Complete Buyer’s Guide",
+            "Buy Single Head ROPP Capping Machines & Oil Cap Slitting Machines in Gujarat Cities",
           description:
-            "Explore top TMT machine manufacturers and steel equipment suppliers in Gujarat, Noida, Tamil Nadu, Pune, and Rajasthan. Get expert insights for smart buying decisions.",
-          image:
-            "https://cdn.pixabay.com/photo/2020/11/12/16/58/worker-5736096_1280.jpg",
+            "As India’s packaging and bottling industries grow, the need for precision-engineered equipment like Single Head ROPP Capping Machines and Oil Cap Slitting Machines is rising—particularly in Gujarat. Known for its robust industrial base and engineering excellence, Gujarat’s cities such as Ahmedabad, Rajkot, and Surat have become key centers for manufacturing and supplying such machinery.",
+          image: OilCapSlittingAndFolding,
           specs: [
             "Higher production output",
             "energy efficiency",
@@ -62,9 +60,9 @@ export default function Blog() {
         },
         {
           title:
-            "Best CNC Machines and Steel Plant Equipment in India – Supplier Guide for Maharashtra, Indore & South India",
+            "High-Performance Packaging Machinery in Gujarat – From Gandhinagar to Rajkot",
           description:
-            "Explore trusted CNC machine dealers in Pune, steel processing equipment suppliers in Indore, and top plant solution providers in South India, Delhi NCR, and Nagpur.",
+            "Gujarat stands tall as a manufacturing and industrial powerhouse in India. Known for its entrepreneurial spirit and engineering innovation, the state has carved a strong niche in the packaging machinery segment. From Gandhinagar, the state capital with modern infrastructure, to Rajkot, a city known for precision engineering, Gujarat is home to a thriving ecosystem of high-performance packaging machine manufacturers and suppliers.",
           image:
             "https://cdn.pixabay.com/photo/2020/11/23/16/51/cnc-5770326_1280.jpg",
           specs: [
@@ -74,19 +72,19 @@ export default function Blog() {
           ],
           link: "/cnc-machine-equipment-blog",
         },
-        {
-          title:
-            "Affordable TMT Plant Equipment & Turnkey Solutions in India – From Coimbatore to Jharkhand",
-          description:
-            "Find affordable TMT plant equipment in India with expert installation in Coimbatore, turnkey solutions in Chennai, and trusted TMT bar manufacturers in Jharkhand.",
-          image: TmtBarPlantEquipment,
-          specs: [
-            "Lower upfront investment",
-            "Reduced production downtime",
-            "Energy efficiency",
-          ],
-          link: "/tmt-plant-equipment-blog",
-        },
+        // {
+        //   title:
+        //     "Affordable TMT Plant Equipment & Turnkey Solutions in India – From Coimbatore to Jharkhand",
+        //   description:
+        //     "Find affordable TMT plant equipment in India with expert installation in Coimbatore, turnkey solutions in Chennai, and trusted TMT bar manufacturers in Jharkhand.",
+        //   image: TmtBarPlantEquipment,
+        //   specs: [
+        //     "Lower upfront investment",
+        //     "Reduced production downtime",
+        //     "Energy efficiency",
+        //   ],
+        //   link: "/tmt-plant-equipment-blog",
+        // },
         {
           title:
             "Pouch Packaging Machine Manufacturer in Ahmedabad – Reliable, Affordable & Innovative",
