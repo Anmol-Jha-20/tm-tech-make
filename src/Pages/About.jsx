@@ -128,37 +128,20 @@ export default function AboutUs() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* SEO Meta Information */}
       <Helmet>
-        <title>About Us | TM Tech Make</title>
+        <title>
+          About TM TECH MAKE – Leading Packaging Machine Manufacturer in
+          Ahmedabad, Gujarat
+        </title>
         <meta
           name="description"
-          content="Learn about TM Tech Make, a leading manufacturer of packaging machines, cap elevator machines, and slitting machines, delivering high-quality automation solutions worldwide."
+          content="TM TECH MAKE is a trusted manufacturer and supplier of high-quality packaging machines based in Ahmedabad, Gujarat."
         />
+        <link rel="canonical" href="https://tmteckmake.com/about-us" />
         <meta
           name="keywords"
           content="About TM Tech Make, Packaging Machines, Cap Elevator Machines, Slitting Machines, Industrial Automation"
         />
-        <meta name="author" content="Webvortex Solutions" />
-        <meta property="og:title" content="About Us | TM Tech Make" />
-        <meta
-          property="og:description"
-          content="Discover our story, expertise, and milestones as a premier packaging machinery manufacturer."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tmtechmake.com/about-us" />
-        {/* <meta
-          property="og:image"
-          content="https://tmtechmake.com/og-image.jpg"
-        /> */}
       </Helmet>
-
-      <div className="hidden">
-        <h1>TM Tech Make - Leading Packaging Machine Manufacturer</h1>
-        <p>
-          About TM Tech Make - Premier manufacturer of packaging machines, cap
-          elevator machines, slitting machines and industrial automation
-          equipment.
-        </p>
-      </div>
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white py-20">

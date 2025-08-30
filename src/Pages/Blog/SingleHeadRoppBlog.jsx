@@ -411,7 +411,7 @@ export default function ROPPCappingBlog() {
           name="description"
           content="TM Tech Make is a leading Single Head ROPP Capping Machine manufacturer in Daskroi, Ahmedabad, Gujarat, offering durable, efficient, and GMP-compliant solutions."
         />
-        <meta name="theme-color" content={brand} />
+        {/* <meta name="theme-color" content={brand} /> */}
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

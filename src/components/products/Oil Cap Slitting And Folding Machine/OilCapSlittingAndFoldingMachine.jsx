@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import OilCapSlittingAndFoldingMachineImage from "../../../assets/OilCapSlittingAndFoldingMachine.jpeg";
+import { Helmet } from "react-helmet-async";
 
 const OilCapSlittingAndFoldingMachine = () => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -111,38 +112,6 @@ const OilCapSlittingAndFoldingMachine = () => {
     },
   ];
 
-  useEffect(() => {
-    document.title =
-      "Pouch Packaging Machine - TM Tech Make | High-Quality Packaging Solutions";
-
-    // Add structured data for SEO
-    const structuredData = {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      name: "Oil Cap Slitting And Folding Machine",
-      manufacturer: {
-        "@type": "Organization",
-        name: "TM Tech Make",
-      },
-      description:
-        "High-quality automatic pouch packaging machine for various industries",
-      offers: {
-        "@type": "Offer",
-        availability: "https://schema.org/InStock",
-        priceCurrency: "INR",
-      },
-    };
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify(structuredData);
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   const handleImageClick = (index) => {
     setSelectedImage(index);
     setIsImageZoomed(true);
@@ -150,22 +119,20 @@ const OilCapSlittingAndFoldingMachine = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Breadcrumb */}
-      {/* <div className="bg-white border-b">
-        <div className="container mx-auto px-4 py-3">
-          <nav className="text-sm text-gray-600">
-            <a href="#" className="hover:text-blue-600">
-              Home
-            </a>
-            <span className="mx-2">›</span>
-            <a href="#" className="hover:text-blue-600">
-              Packaging Machines
-            </a>
-            <span className="mx-2">›</span>
-            <span className="text-gray-900">Pouch Packaging Machine</span>
-          </nav>
-        </div>
-      </div> */}
+      <Helmet>
+        <title>
+          Oil Cap Slitting aur Folding Machine Manufacturer in Daskroi,
+          Ahmedabad – TM TECH MAKE
+        </title>
+        <meta
+          name="description"
+          content="TM TECH MAKE is a trusted manufacturer of Oil Cap Slitting and Folding Machines in Daskroi, Ahmedabad. Our machines deliver high-speed, precise, and durable performance, specially designed for efficient processing of oil bottle caps. Ideal for industrial production with low maintenance."
+        />
+        <link
+          rel="canonical"
+          href="https://tmteckmake.com/oil-cap-slitting-and-folding-machine"
+        />
+      </Helmet>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">

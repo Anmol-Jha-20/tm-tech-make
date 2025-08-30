@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import AutomaticPouchPackagingMachineImage from "../../../assets/PouchPackagingMachineOne.jpeg";
+import { Helmet } from "react-helmet-async";
 
 const AutomaticPouchPackagingMachine = () => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -111,37 +112,37 @@ const AutomaticPouchPackagingMachine = () => {
     },
   ];
 
-  useEffect(() => {
-    document.title =
-      "Pouch Packaging Machine - TM Tech Make | High-Quality Packaging Solutions";
+  // useEffect(() => {
+  //   document.title =
+  //     "Pouch Packaging Machine - TM Tech Make | High-Quality Packaging Solutions";
 
-    // Add structured data for SEO
-    const structuredData = {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      name: "Pouch Packaging Machine TM-PP-500",
-      manufacturer: {
-        "@type": "Organization",
-        name: "TM Tech Make",
-      },
-      description:
-        "High-quality automatic pouch packaging machine for various industries",
-      offers: {
-        "@type": "Offer",
-        availability: "https://schema.org/InStock",
-        priceCurrency: "INR",
-      },
-    };
+  //   // Add structured data for SEO
+  //   const structuredData = {
+  //     "@context": "https://schema.org/",
+  //     "@type": "Product",
+  //     name: "Pouch Packaging Machine TM-PP-500",
+  //     manufacturer: {
+  //       "@type": "Organization",
+  //       name: "TM Tech Make",
+  //     },
+  //     description:
+  //       "High-quality automatic pouch packaging machine for various industries",
+  //     offers: {
+  //       "@type": "Offer",
+  //       availability: "https://schema.org/InStock",
+  //       priceCurrency: "INR",
+  //     },
+  //   };
 
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify(structuredData);
-    document.head.appendChild(script);
+  //   const script = document.createElement("script");
+  //   script.type = "application/ld+json";
+  //   script.text = JSON.stringify(structuredData);
+  //   document.head.appendChild(script);
 
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
+  //   return () => {
+  //     document.head.removeChild(script);
+  //   };
+  // }, []);
 
   const handleImageClick = (index) => {
     setSelectedImage(index);
@@ -150,22 +151,20 @@ const AutomaticPouchPackagingMachine = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Breadcrumb */}
-      {/* <div className="bg-white border-b">
-        <div className="container mx-auto px-4 py-3">
-          <nav className="text-sm text-gray-600">
-            <a href="#" className="hover:text-blue-600">
-              Home
-            </a>
-            <span className="mx-2">›</span>
-            <a href="#" className="hover:text-blue-600">
-              Packaging Machines
-            </a>
-            <span className="mx-2">›</span>
-            <span className="text-gray-900">Pouch Packaging Machine</span>
-          </nav>
-        </div>
-      </div> */}
+      <Helmet>
+        <title>
+          Automatic Pouch Packaging Machine Manufacturer In Daskroi, Ahmedabad -
+          Gujarat - TM TECH MAKE
+        </title>
+        <meta
+          name="description"
+          content="TM TECH MAKE is a leading Automatic Pouch Packaging Machine manufacturer in Daskroi, Ahmedabad, Gujarat. We offer high-performance pouch filling, sealing & packing machines for liquid, powder & granule products. Contact us for reliable, efficient, and customized packaging solutions."
+        />
+        <link
+          rel="canonical"
+          href="https://tmteckmake.com/automatic-pouch-packaging-machine"
+        />
+      </Helmet>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">

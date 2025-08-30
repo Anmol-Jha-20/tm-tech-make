@@ -84,10 +84,13 @@ const SonaWebsite = () => {
       {/* SEO Meta Tags */}
       <Helmet>
         <html lang="en" />
-        <title>TM TECH MAKE | Advanced Packaging & Slitting Machines</title>
+        <title>
+          TM TECH MAKE | Best Packaging Machine Manufacturer in Ahmedabad,
+          Gujarat
+        </title>
         <meta
           name="description"
-          content="Explore TM TECH MAKE's cutting-edge packaging, cap elevator, and slitting machines designed for next-gen industrial solutions."
+          content="TM TECH MAKE is a leading packaging machine manufacturer based in Ahmedabad, Gujarat. We offer high-quality, innovative, and reliable packaging solutions for various industries to enhance your production efficiency and product quality."
         />
         <meta
           name="keywords"
@@ -104,8 +107,6 @@ const SonaWebsite = () => {
           property="og:description"
           content="Discover our innovative solutions in packaging and slitting machinery. Built for performance and efficiency."
         />
-        <meta property="og:url" content="https://tmteckmake.com/" />
-        <meta property="og:type" content="website" />
       </Helmet>
 
       {/* Top Header */}

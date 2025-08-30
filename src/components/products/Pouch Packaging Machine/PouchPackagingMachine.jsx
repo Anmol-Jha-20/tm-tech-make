@@ -22,6 +22,7 @@ import {
 import { Link } from "react-router-dom";
 import PouchPackagingMachineImage from "../../../assets/PouchPackagingMachine.jpeg";
 import PouchPackagingMachineOne from "../../../assets/PouchPackagingMachineOne.jpeg";
+import { Helmet } from "react-helmet-async";
 
 const PouchPackagingMachine = () => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -112,38 +113,6 @@ const PouchPackagingMachine = () => {
     },
   ];
 
-  useEffect(() => {
-    document.title =
-      "Pouch Packaging Machine - TM Tech Make | High-Quality Packaging Solutions";
-
-    // Add structured data for SEO
-    const structuredData = {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      name: "Pouch Packaging Machine TM-PP-500",
-      manufacturer: {
-        "@type": "Organization",
-        name: "TM Tech Make",
-      },
-      description:
-        "High-quality automatic pouch packaging machine for various industries",
-      offers: {
-        "@type": "Offer",
-        availability: "https://schema.org/InStock",
-        priceCurrency: "INR",
-      },
-    };
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify(structuredData);
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   const handleImageClick = (index) => {
     setSelectedImage(index);
     setIsImageZoomed(true);
@@ -151,22 +120,20 @@ const PouchPackagingMachine = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Breadcrumb */}
-      {/* <div className="bg-white border-b">
-        <div className="container mx-auto px-4 py-3">
-          <nav className="text-sm text-gray-600">
-            <a href="#" className="hover:text-blue-600">
-              Home
-            </a>
-            <span className="mx-2">›</span>
-            <a href="#" className="hover:text-blue-600">
-              Packaging Machines
-            </a>
-            <span className="mx-2">›</span>
-            <span className="text-gray-900">Pouch Packaging Machine</span>
-          </nav>
-        </div>
-      </div> */}
+      <Helmet>
+        <title>
+          Pouch Packaging Machine Manufacturer In Daskroi, Ahmedabad - Gujarat -
+          TM TECH MAKE
+        </title>
+        <meta
+          name="description"
+          content="TM TECH MAKE based in Daskroi, Ahmedabad – Gujarat, is a leading manufacturer of Pouch Packaging Machines. Our machines provide efficient, high-speed packaging solutions suitable for various industries."
+        />
+        <link
+          rel="canonical"
+          href="https://tmteckmake.com/pouch-packaging-machine"
+        />
+      </Helmet>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">

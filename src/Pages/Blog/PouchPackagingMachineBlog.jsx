@@ -473,6 +473,7 @@ import {
   Globe,
 } from "lucide-react";
 import PouchPackagingMachineImage from "../../assets/PouchPackagingMachine.jpeg";
+import { Helmet } from "react-helmet-async";
 
 const PouchPackagingMachineBlog = () => {
   const fadeInUp = {
@@ -575,16 +576,16 @@ const PouchPackagingMachineBlog = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* SEO Meta Tags - These would typically be in the document head */}
-      <div className="sr-only">
-        <h1>
+      <Helmet>
+        <title>
           Pouch Packaging Machine Manufacturer in Daskroi, Ahmedabad, Gujarat –
           TM TECH MAKE
-        </h1>
+        </title>
         <meta
           name="description"
           content="TM TECH MAKE is a leading Pouch Packaging Machine manufacturer in Daskroi, Ahmedabad, Gujarat, offering durable, high-speed, and cost-effective packaging solutions."
         />
-      </div>
+      </Helmet>
 
       {/* Hero Section */}
       <motion.section
