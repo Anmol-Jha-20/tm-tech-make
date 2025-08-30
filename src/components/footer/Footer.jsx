@@ -132,7 +132,8 @@ export default function Footer() {
               >
                 Terms And Conditions
               </a>
-              | © 2024 TM TECH MAKE Ltd. All rights reserved
+              | © {new Date().getFullYear()} TM TECH MAKE Ltd. All rights
+              reserved
             </p>
           </div>
         </div>

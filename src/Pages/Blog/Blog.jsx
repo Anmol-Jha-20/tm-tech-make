@@ -5,8 +5,8 @@ import { Helmet } from "react-helmet-async";
 import PouchPackagingMachineImage from "../../assets/PouchPackagingMachine.jpeg";
 import SingleHeadRoppImage from "../../assets/SingleHeadROPPCappingMachine.jpeg";
 import OilCapSlittingAndFolding from "../../assets/OilCapSlittingAndFoldingMachine.jpeg";
-import pouchpackagingmachineimage from "../../assets/PouchPackagingMachineTwo.png";
-import PouchpackagingmachineimageTwo from "../../assets/PouchPackagingMachineThree.png";
+import pouchpackagingmachineimage from "../../assets/PouchPackagingMachineTwo.webp";
+import PouchpackagingmachineimageTwo from "../../assets/PouchPackagingMachineThree.webp";
 
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,15 +36,15 @@ export default function Blog() {
           ],
           link: "/tmt-rolling-mill-blog",
         },
-        {
-          title:
-            "Automatic Pouch Packaging & ROPP Capping Machines in Gujarat – Supplier in Ahmedabad, Surat & More",
-          description:
-            "Gujarat is one of India’s fastest-growing industrial states, renowned for its manufacturing, engineering, and packaging solutions. The demand for efficient, automated packaging machinery—especially automatic pouch packaging machines and ROPP capping machines—has grown exponentially in cities like Ahmedabad, Surat, Rajkot, Vadodara, and Bhavnagar. With a focus on reducing manual labor, increasing speed, and ensuring hygiene and product consistency, businesses across sectors are investing in advanced machinery solutions.",
-          image: pouchpackagingmachineimage,
-          specs: ["High ROI", "Scalability", "Government incentives"],
-          link: "/tmt-bar-plant-blog",
-        },
+        // {
+        //   title:
+        //     "Automatic Pouch Packaging & ROPP Capping Machines in Gujarat – Supplier in Ahmedabad, Surat & More",
+        //   description:
+        //     "Gujarat is one of India’s fastest-growing industrial states, renowned for its manufacturing, engineering, and packaging solutions. The demand for efficient, automated packaging machinery—especially automatic pouch packaging machines and ROPP capping machines—has grown exponentially in cities like Ahmedabad, Surat, Rajkot, Vadodara, and Bhavnagar. With a focus on reducing manual labor, increasing speed, and ensuring hygiene and product consistency, businesses across sectors are investing in advanced machinery solutions.",
+        //   image: pouchpackagingmachineimage,
+        //   specs: ["High ROI", "Scalability", "Government incentives"],
+        //   link: "/tmt-bar-plant-blog",
+        // },
         {
           title:
             "Buy Single Head ROPP Capping Machines & Oil Cap Slitting Machines in Gujarat Cities",
@@ -74,41 +74,64 @@ export default function Blog() {
         },
         // {
         //   title:
-        //     "Affordable TMT Plant Equipment & Turnkey Solutions in India – From Coimbatore to Jharkhand",
+        //     "Pouch Packaging Machine Manufacturer in Ahmedabad – Reliable, Affordable & Innovative",
         //   description:
-        //     "Find affordable TMT plant equipment in India with expert installation in Coimbatore, turnkey solutions in Chennai, and trusted TMT bar manufacturers in Jharkhand.",
-        //   image: TmtBarPlantEquipment,
-        //   specs: [
-        //     "Lower upfront investment",
-        //     "Reduced production downtime",
-        //     "Energy efficiency",
-        //   ],
-        //   link: "/tmt-plant-equipment-blog",
+        //     "The growing demand for efficient, hygienic, and cost-effective packaging solutions has led to a boom in the use of pouch packaging machines across multiple industries. Ahmedabad, one of India's key industrial hubs, is home to numerous manufacturers who specialize in high-quality pouch packaging machinery.",
+        //   image: PouchPackagingMachineImage,
+        //   specs: ["Efficient", "Automated", "Versatile"],
+        //   link: "/pouch-packaging-machine-blog",
+        // },
+        // {
+        //   title: "Single Head ROPP Capping Machine in Gujarat",
+        //   description:
+        //     "In today’s fast-paced manufacturing environment, ensuring the safety, hygiene, and shelf life of liquid-based products is critical. The Single Head ROPP (Roll-On Pilfer Proof) Capping Machine plays a vital role in sealing bottles securely and efficiently. If you’re searching for a high-performance ROPP capping machine in Gujarat, then TmTeckMake is your trusted partner.",
+        //   image: SingleHeadRoppImage,
+        //   specs: ["Durable", "Fast", "Reliable"],
+        //   link: "/single-head-ropp-caping-blog",
+        // },
+        // {
+        //   title: "Oil Cap Slitting and Folding Machine Manufacturer in Rajkot",
+        //   description:
+        //     "In the modern packaging industry, precision and tamper-resistance are non-negotiable. Whether you're sealing edible oils, lubricants, or medicinal syrups, the integrity of the cap is key to maintaining product quality and consumer trust. That’s where the Oil Cap Slitting and Folding Machine steps in—a must-have for ensuring tamper-proof aluminum closures.",
+        //   image: OilCapSlittingAndFolding,
+        //   specs: ["Precise", "Automated", "Efficient"],
+        //   link: "/oil-cap-slitting-folding-blog",
         // },
         {
           title:
-            "Pouch Packaging Machine Manufacturer in Ahmedabad – Reliable, Affordable & Innovative",
+            "Automatic Pouch Packaging Machine Manufacturer in Daskroi, Ahmedabad, Gujarat – TM TECH MAKE",
           description:
-            "The growing demand for efficient, hygienic, and cost-effective packaging solutions has led to a boom in the use of pouch packaging machines across multiple industries. Ahmedabad, one of India's key industrial hubs, is home to numerous manufacturers who specialize in high-quality pouch packaging machinery.",
+            "In today’s fast-paced industrial environment, packaging has become more than just a necessity—it is a competitive advantage. Businesses across food, beverages, pharmaceuticals, chemicals, cosmetics, and agriculture require reliable, efficient, and cost-effective packaging solutions to meet rising consumer demand. Among these, the Automatic Pouch Packaging Machine  Manufacturer in Daskroi, Ahmedabad, Gujarat  has gained immense popularity due to its speed, precision, and versatility.",
+          image: pouchpackagingmachineimage,
+          specs: ["High ROI", "Scalability", "Government incentives"],
+          link: "/tmt-bar-plant-blog",
+        },
+        {
+          title:
+            "Cap Slitting and Folding Machine Manufacturer in Daskroi, Ahmedabad, Gujarat – TM TECH MAKE",
+          description:
+            "In the modern packaging and manufacturing industry, precision and efficiency are key to delivering high-quality products. One of the most critical components of bottle and container packaging is the cap. Proper handling, slitting, and folding of caps ensure product safety, prevent leakage, and improve consumer confidence. This is where Cap Slitting and Folding Machines in Daskroi, Ahmedabad, Gujarat  play a vital role.",
+          image: OilCapSlittingAndFolding,
+          specs: ["Precise", "Automated", "Efficient"],
+          link: "/cap-sliting-blog",
+        },
+        {
+          title:
+            "Pouch Packaging Machine Manufacturer in Daskroi, Ahmedabad, Gujarat – TM TECH MAKE",
+          description:
+            "In today’s fast-moving world, packaging is no longer just about wrapping a product—it is about safety, efficiency, branding, and consumer convenience. Among different packaging technologies,Pouch Packaging Machine Manufacturer in Daskroi, Ahmedabad, Gujarat has become one of the most popular solutions across industries. They are versatile, cost-effective, and suitable for a wide variety of products, from food items and beverages to chemicals, pharmaceuticals, and cosmetics.",
           image: PouchPackagingMachineImage,
           specs: ["Efficient", "Automated", "Versatile"],
           link: "/pouch-packaging-machine-blog",
         },
         {
-          title: "Single Head ROPP Capping Machine in Gujarat",
+          title:
+            "Single Head ROPP Capping Machine Manufacturer in Daskroi, Ahmedabad, Gujarat -  TM TECH MAKE ",
           description:
-            "In today’s fast-paced manufacturing environment, ensuring the safety, hygiene, and shelf life of liquid-based products is critical. The Single Head ROPP (Roll-On Pilfer Proof) Capping Machine plays a vital role in sealing bottles securely and efficiently. If you’re searching for a high-performance ROPP capping machine in Gujarat, then TmTeckMake is your trusted partner.",
+            "In today’s competitive packaging industry, automation and precision play a vital role in ensuring efficiency, product safety, and brand value. One of the most widely used solutions for secure bottle sealing is the Single Head ROPP Capping Machine. Known for its reliability, compact design, and ease of operation, this machine has become a preferred choice across industries such as pharmaceuticals, beverages, cosmetics, chemicals, edible oils, and more.",
           image: SingleHeadRoppImage,
           specs: ["Durable", "Fast", "Reliable"],
           link: "/single-head-ropp-caping-blog",
-        },
-        {
-          title: "Oil Cap Slitting and Folding Machine Manufacturer in Rajkot",
-          description:
-            "In the modern packaging industry, precision and tamper-resistance are non-negotiable. Whether you're sealing edible oils, lubricants, or medicinal syrups, the integrity of the cap is key to maintaining product quality and consumer trust. That’s where the Oil Cap Slitting and Folding Machine steps in—a must-have for ensuring tamper-proof aluminum closures.",
-          image: OilCapSlittingAndFolding,
-          specs: ["Precise", "Automated", "Efficient"],
-          link: "/oil-cap-slitting-folding-blog",
         },
       ],
     },

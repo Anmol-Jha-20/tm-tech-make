@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
-import Hero from "../assets/Hero.png";
+import Hero from "../assets/Hero.webp";
 import { Helmet } from "react-helmet";
 
 export default function AboutUs() {

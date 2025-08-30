@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, MessageCircle, Phone } from "lucide-react";
-import HeroTwo from "../../assets/Hero2.png";
-import HeroThree from "../../assets/Hero3.png";
-import HeroSevenImage from "../../assets/HeroSeven.png";
+import HeroTwo from "../../assets/Hero2.webp";
+import HeroThree from "../../assets/Hero3.webp";
+import HeroSevenImage from "../../assets/HeroSeven.webp";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

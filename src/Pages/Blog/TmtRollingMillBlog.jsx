@@ -9,9 +9,10 @@ import {
   Star,
   ArrowRight,
 } from "lucide-react";
-import pouchpackagingmachineimage from "../../assets/PouchPackagingMachineTwo.png";
+import pouchpackagingmachineimage from "../../assets/PouchPackagingMachineTwo.webp";
 import SingleHeadRoppImage from "../../assets/SingleHeadROPPCappingMachine.jpeg";
 import OilCapSlittingAndFolding from "../../assets/OilCapSlittingAndFoldingMachine.jpeg";
+import { Helmet } from "react-helmet";
 
 export default function TmtRollingMillBlog() {
   const cities = [
@@ -69,8 +70,21 @@ export default function TmtRollingMillBlog() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* SEO Meta Tags would be handled by your app's head management */}
-
-      {/* Header */}
+      <Helmet>
+        <title>
+          Best Packaging & Capping Machines in Gujarat – Ahmedabad, Rajkot,
+          Surat, Vadodara
+        </title>
+        <meta
+          name="description"
+          content="Discover top-quality pouch packaging machines, ROPP capping machines, cap slitting and folding units in Gujarat. Explore trusted suppliers in Ahmedabad, Rajkot, Surat, Vadodara & Gandhinagar for advanced packaging solutions."
+        />
+        <meta
+          name="keywords"
+          content="Pouch Packaging Machine in Gujarat, Automatic Pouch Packaging Machine in Gandhinagar, Single Head ROPP Capping Machine in Ahmedabad, Oil Cap Slitting and Folding Machine in Rajkot, Cap Slitting Machine in Vadodara,	Cap Folding Machine Supplier Gujarat,	Packaging Machine Manufacturers in Ahmedabad,	Food & Beverage Packaging Machine in Surat,	Edible Oil Packaging Machines India,	ROPP Capping Machine Exporter,	Industrial Packaging Machinery Gujarat,	High-Speed Pouch Packing Machine,	Tamper-Proof Bottle Capping Machines,	Gujarat Packaging Machine Exporter,	Best Packaging Equipment in Rajkot,	Automatic Packaging Machine Supplier"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 sm:py-20">

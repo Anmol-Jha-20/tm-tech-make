@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
-import Hero from "../../assets/Hero.png";
-import Hero2 from "../../assets/Hero2.png";
+import Hero from "../../assets/Hero.webp";
+import Hero2 from "../../assets/Hero2.webp";
 import { Link } from "react-router-dom";
 
 export default function AboutCompany() {

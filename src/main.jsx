@@ -24,6 +24,7 @@ import TmtPlantEquipmentBlog from "./Pages/Blog/TmtPlantEquipmentBlog.jsx";
 import PouchPackagingMachineBlog from "./Pages/Blog/PouchPackagingMachineBlog.jsx";
 import ROPPCappingBlog from "./Pages/Blog/SingleHeadRoppBlog.jsx";
 import OilCapSlitingFoldingBlog from "./Pages/Blog/OilCapSlittingFolding.jsx";
+import CapSlitingBlogPage from "./Pages/Blog/CapSlitingBlog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -110,6 +111,10 @@ const router = createBrowserRouter([
       {
         path: "/automatic-pouch-packaging-machine",
         element: <AutomaticPouchPackagingMachine />,
+      },
+      {
+        path: "/cap-sliting-blog",
+        element: <CapSlitingBlogPage />,
       },
     ],
   },
